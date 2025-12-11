@@ -1,0 +1,6 @@
+db/
+scrapbook/
+*.egg-info
+
+*.pyc
+__pycache__
