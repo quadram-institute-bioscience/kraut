@@ -1,0 +1,4 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Segatella copri	165179	S	156624	5597	162221	0.99983
+Olivibacter sp. LS-1	2592345	S	10	0	10	0.00006
+Homo sapiens	9606	S	17	0	17	0.00010

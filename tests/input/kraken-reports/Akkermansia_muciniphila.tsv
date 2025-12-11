@@ -1,0 +1,25 @@
+ 54.05	155559	155559	U	0	unclassified
+ 45.95	132268	0	R	1	root
+ 45.95	132268	24	R1	131567	  cellular organisms
+ 45.94	132242	184	D	2	    Bacteria
+ 45.88	132058	274	K	3379134	      Pseudomonadati
+ 45.79	131783	15	K1	1783257	        PVC group
+ 45.78	131768	32	P	74201	          Verrucomicrobiota
+ 45.77	131736	0	C	203494	            Verrucomicrobiia
+ 45.77	131736	55	O	48461	              Verrucomicrobiales
+ 45.75	131681	0	F	1647988	                Akkermansiaceae
+ 45.75	131681	4647	G	239934	                  Akkermansia
+ 44.13	127031	127031	S	239935	                    Akkermansia muciniphila
+  0.00	3	0	G1	2608915	                    unclassified Akkermansia
+  0.00	2	2	S	3037987	                      Akkermansia sp. BCRC 18949
+  0.00	1	1	S	3414159	                      Akkermansia sp. JRP_AM1
+  0.00	1	0	K1	1783270	        FCB group
+  0.00	1	0	K2	68336	          Bacteroidota/Chlorobiota group
+  0.00	1	0	P	976	            Bacteroidota
+  0.00	1	0	C	117747	              Sphingobacteriia
+  0.00	1	0	O	200666	                Sphingobacteriales
+  0.00	1	0	F	84566	                  Sphingobacteriaceae
+  0.00	1	0	G	84567	                    Pedobacter
+  0.00	1	0	G1	2628915	                      unclassified Pedobacter
+  0.00	1	1	S	2482728	                        Pedobacter sp. G11
+  0.00	2	2	D	2759	    Eukaryota

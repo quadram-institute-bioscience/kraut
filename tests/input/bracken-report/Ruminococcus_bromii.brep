@@ -1,0 +1,34 @@
+100.00	1311	0	R	1	root
+100.00	1311	0	R1	131567	  cellular organisms
+100.00	1311	0	D	2	    Bacteria
+100.00	1311	0	K	1783272	      Bacillati
+100.00	1311	0	P	1239	        Bacillota
+100.00	1311	0	C	186801	          Clostridia
+64.34	844	0	O	186802	            Eubacteriales
+61.95	812	0	F	216572	              Oscillospiraceae
+54.96	721	0	G	1263	                Ruminococcus
+50.56	663	0	G1	2608920	                  unclassified Ruminococcus
+41.85	549	549	S	3233381	                    Ruminococcus sp. JL13D9
+8.71	114	114	S	3233380	                    Ruminococcus sp. JE7B6
+2.39	31	31	S	2564099	                  Ruminococcus bovis
+2.01	26	26	S	1160721	                  Ruminococcus bicirculans (ex Wegman et al. 2014)
+7.00	91	0	G	459786	                Oscillibacter
+7.00	91	0	G1	2629304	                  unclassified Oscillibacter
+7.00	91	91	S	2109687	                    Oscillibacter sp. PEA192
+2.39	31	0	F	186806	              Eubacteriaceae
+2.39	31	0	G	1730	                Eubacterium
+2.39	31	31	S	53442	                  Eubacterium callanderi
+35.66	467	0	O	3085636	            Lachnospirales
+35.66	467	0	F	186803	              Lachnospiraceae
+13.77	180	0	G	33042	                Coprococcus
+4.95	64	0	G1	2684943	                  unclassified Coprococcus
+4.95	64	64	S	751585	                    Coprococcus sp. ART55/1
+8.82	115	115	S	33043	                  Coprococcus eutactus
+8.74	114	0	G	2569097	                Anaerobutyricum
+8.74	114	114	S	39488	                  Anaerobutyricum hallii
+5.36	70	0	G	841	                Roseburia
+5.36	70	70	S	301301	                  Roseburia hominis
+4.53	59	0	G	3342669	                Eshraghiella
+4.53	59	59	S	45851	                  Eshraghiella crossota
+3.26	42	0	G	189330	                Dorea
+3.26	42	42	S	39486	                  Dorea formicigenerans

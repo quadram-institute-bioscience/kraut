@@ -1,0 +1,15 @@
+100.00	259944	0	R	1	root
+100.00	259944	0	R1	131567	  cellular organisms
+100.00	259944	0	D	2	    Bacteria
+100.00	259944	0	K	3379134	      Pseudomonadati
+100.00	259944	0	P	1224	        Pseudomonadota
+100.00	259944	0	C	1236	          Gammaproteobacteria
+100.00	259944	0	O	91347	            Enterobacterales
+100.00	259944	0	F	543	              Enterobacteriaceae
+100.00	259944	0	F1	2890311	                Klebsiella/Raoultella group
+100.00	259944	0	G	570	                  Klebsiella
+100.00	259944	0	G1	3390273	                    Klebsiella pneumoniae complex
+99.47	258564	258564	S	573	                      Klebsiella pneumoniae
+0.26	665	665	S	1463165	                      Klebsiella quasipneumoniae
+0.27	689	689	S	244366	                      Klebsiella variicola
+0.01	26	26	S	2026240	                      Klebsiella quasivariicola

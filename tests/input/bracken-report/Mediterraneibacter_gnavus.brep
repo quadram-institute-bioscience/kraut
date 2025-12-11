@@ -1,0 +1,12 @@
+100.00	157352	0	R	1	root
+100.00	157352	0	R1	131567	  cellular organisms
+100.00	157352	0	D	2	    Bacteria
+100.00	157352	0	K	1783272	      Bacillati
+100.00	157352	0	P	1239	        Bacillota
+100.00	157352	0	C	186801	          Clostridia
+100.00	157352	0	O	3085636	            Lachnospirales
+100.00	157352	0	F	186803	              Lachnospiraceae
+99.99	157338	0	G	2316020	                Mediterraneibacter
+99.99	157338	157338	S	33038	                  Mediterraneibacter gnavus
+0.01	13	0	G	189330	                Dorea
+0.01	13	13	S	88431	                  Dorea longicatena

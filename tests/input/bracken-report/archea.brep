@@ -1,0 +1,49 @@
+100.00	141539	0	R	1	root
+100.00	141539	0	R1	131567	  cellular organisms
+99.98	141509	0	D	2157	    Archaea
+99.98	141509	0	K	3366610	      Methanobacteriati
+99.98	141509	0	P	28890	        Methanobacteriota
+99.98	141509	0	P1	2283794	          Methanomada group
+99.98	141509	0	C	183925	            Methanobacteria
+99.98	141509	0	O	2158	              Methanobacteriales
+99.98	141509	0	F	2159	                Methanobacteriaceae
+53.72	76036	0	G	2172	                  Methanobrevibacter
+53.58	75830	75830	S	2173	                    Methanobrevibacter smithii
+0.10	140	140	S	2911853	                    Methanobrevibacter intestini
+0.04	55	0	G1	2638681	                    unclassified Methanobrevibacter
+0.04	55	55	S	2870563	                      Methanobrevibacter sp. TLL-48-HuF1
+0.01	10	10	S	120963	                    Methanobrevibacter acididurans
+46.26	65473	0	G	2316	                  Methanosphaera
+46.25	65461	65461	S	2317	                    Methanosphaera stadtmanae
+0.01	12	0	G1	2643926	                    unclassified Methanosphaera
+0.01	12	12	S	1789762	                      Methanosphaera sp. BMS
+0.02	29	0	D	2759	    Eukaryota
+0.02	29	0	D1	33154	      Opisthokonta
+0.02	29	0	K	33208	        Metazoa
+0.02	29	0	K1	6072	          Eumetazoa
+0.02	29	0	K2	33213	            Bilateria
+0.02	29	0	K3	33511	              Deuterostomia
+0.02	29	0	P	7711	                Chordata
+0.02	29	0	P1	89593	                  Craniata
+0.02	29	0	P2	7742	                    Vertebrata
+0.02	29	0	P3	7776	                      Gnathostomata
+0.02	29	0	P4	117570	                        Teleostomi
+0.02	29	0	P5	117571	                          Euteleostomi
+0.02	29	0	P6	8287	                            Sarcopterygii
+0.02	29	0	P7	1338369	                              Dipnotetrapodomorpha
+0.02	29	0	P8	32523	                                Tetrapoda
+0.02	29	0	P9	32524	                                  Amniota
+0.02	29	0	C	40674	                                    Mammalia
+0.02	29	0	C1	32525	                                      Theria
+0.02	29	0	C2	9347	                                        Eutheria
+0.02	29	0	C3	1437010	                                          Boreoeutheria
+0.02	29	0	C4	314146	                                            Euarchontoglires
+0.02	29	0	O	9443	                                              Primates
+0.02	29	0	O1	376913	                                                Haplorrhini
+0.02	29	0	O2	314293	                                                  Simiiformes
+0.02	29	0	O3	9526	                                                    Catarrhini
+0.02	29	0	O4	314295	                                                      Hominoidea
+0.02	29	0	F	9604	                                                        Hominidae
+0.02	29	0	F1	207598	                                                          Homininae
+0.02	29	0	G	9605	                                                            Homo
+0.02	29	29	S	9606	                                                              Homo sapiens

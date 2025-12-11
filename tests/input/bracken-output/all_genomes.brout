@@ -1,0 +1,46 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Klebsiella pneumoniae	573	S	4262	248710	252972	0.16307
+Klebsiella quasipneumoniae	1463165	S	59	597	656	0.00042
+Klebsiella variicola	244366	S	29	737	766	0.00049
+Klebsiella quasivariicola	2026240	S	11	15	26	0.00002
+Klebsiella michiganensis	1134687	S	14	63	77	0.00005
+Salmonella enterica	28901	S	3587	228209	231796	0.14942
+Salmonella bongori	54736	S	14	2	16	0.00001
+Escherichia coli	562	S	33783	428752	462535	0.29816
+Escherichia fergusonii	564	S	34	23	57	0.00004
+Escherichia albertii	208962	S	27	9	36	0.00002
+Escherichia marmotae	1499973	S	16	6	22	0.00001
+Escherichia sp. E4742	2044467	S	14	8	22	0.00001
+Shigella flexneri	623	S	50	6313	6363	0.00410
+Shigella dysenteriae	622	S	29	257	286	0.00018
+Shigella boydii	621	S	13	225	238	0.00015
+Kosakonia radicincitans	283686	S	16	2	18	0.00001
+Scandinavium goeteborgense	1851514	S	13	1	14	0.00001
+Segatella copri	165179	S	156624	5723	162347	0.10465
+Olivibacter sp. LS-1	2592345	S	10	0	10	0.00001
+Akkermansia muciniphila	239935	S	127031	5147	132178	0.08520
+Bdellovibrio bacteriovorus	959	S	10	0	10	0.00001
+Mediterraneibacter gnavus	33038	S	138105	20142	158247	0.10201
+Coprococcus eutactus	33043	S	35	23	58	0.00004
+Coprococcus sp. ART55/1	751585	S	21	15	36	0.00002
+Anaerobutyricum hallii	39488	S	26	8	34	0.00002
+Roseburia hominis	301301	S	21	0	21	0.00001
+Eshraghiella crossota	45851	S	26	0	26	0.00002
+Dorea longicatena	88431	S	12	1	13	0.00001
+Dorea formicigenerans	39486	S	11	0	11	0.00001
+Ruminococcus sp. JL13D9	3233381	S	45	492	537	0.00035
+Ruminococcus sp. JE7B6	3233380	S	13	98	111	0.00007
+Ruminococcus bovis	2564099	S	19	5	24	0.00002
+Ruminococcus bicirculans (ex Wegman et al. 2014)	1160721	S	15	2	17	0.00001
+Oscillibacter sp. PEA192	2109687	S	10	23	33	0.00002
+Eubacterium callanderi	53442	S	12	2	14	0.00001
+Methanobrevibacter smithii	2173	S	58959	16899	75858	0.04890
+Methanobrevibacter intestini	2911853	S	65	75	140	0.00009
+Methanobrevibacter sp. TLL-48-HuF1	2870563	S	23	32	55	0.00004
+Methanobrevibacter acididurans	120963	S	10	0	10	0.00001
+Methanosphaera stadtmanae	2317	S	64777	702	65479	0.04221
+Methanosphaera sp. BMS	1789762	S	12	0	12	0.00001
+Malania oleifera	397392	S	11	2	13	0.00001
+Musa acuminata	4641	S	11	5	16	0.00001
+Cryptomeria japonica	3369	S	12	10	22	0.00001
+Homo sapiens	9606	S	43	9	52	0.00003

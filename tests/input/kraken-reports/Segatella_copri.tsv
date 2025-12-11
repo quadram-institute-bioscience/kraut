@@ -1,0 +1,93 @@
+ 54.31	192870	192870	U	0	unclassified
+ 45.69	162263	3	R	1	root
+ 45.69	162260	20	R1	131567	  cellular organisms
+ 45.68	162215	136	D	2	    Bacteria
+ 45.64	162074	36	K	3379134	      Pseudomonadati
+ 45.63	162038	0	K1	1783270	        FCB group
+ 45.63	162038	0	K2	68336	          Bacteroidota/Chlorobiota group
+ 45.63	162038	408	P	976	            Bacteroidota
+ 45.51	161620	0	C	200643	              Bacteroidia
+ 45.51	161620	473	O	171549	                Bacteroidales
+ 45.38	161147	715	F	171552	                  Prevotellaceae
+ 45.17	160431	3807	G	2974251	                    Segatella
+ 44.10	156624	91574	S	165179	                      Segatella copri
+ 18.32	65050	65050	S1	537011	                        Segatella copri DSM 18205
+  0.00	1	0	G	838	                    Prevotella
+  0.00	1	1	S	28128	                      Prevotella corporis
+  0.00	10	0	C	117747	              Sphingobacteriia
+  0.00	10	0	O	200666	                Sphingobacteriales
+  0.00	10	0	F	84566	                  Sphingobacteriaceae
+  0.00	10	0	G	376469	                    Olivibacter
+  0.00	10	0	G1	2632301	                      unclassified Olivibacter
+  0.00	10	10	S	2592345	                        Olivibacter sp. LS-1
+  0.00	5	0	K	1783272	      Bacillati
+  0.00	5	0	P	201174	        Actinomycetota
+  0.00	5	0	C	1760	          Actinomycetes
+  0.00	5	0	O	85006	            Micrococcales
+  0.00	5	0	F	1268	              Micrococcaceae
+  0.00	5	5	G	1663	                Arthrobacter
+  0.01	25	0	D	2759	    Eukaryota
+  0.00	17	0	D1	33154	      Opisthokonta
+  0.00	17	0	K	33208	        Metazoa
+  0.00	17	0	K1	6072	          Eumetazoa
+  0.00	17	0	K2	33213	            Bilateria
+  0.00	17	0	K3	33511	              Deuterostomia
+  0.00	17	0	P	7711	                Chordata
+  0.00	17	0	P1	89593	                  Craniata
+  0.00	17	0	P2	7742	                    Vertebrata
+  0.00	17	0	P3	7776	                      Gnathostomata
+  0.00	17	0	P4	117570	                        Teleostomi
+  0.00	17	0	P5	117571	                          Euteleostomi
+  0.00	17	0	P6	8287	                            Sarcopterygii
+  0.00	17	0	P7	1338369	                              Dipnotetrapodomorpha
+  0.00	17	0	P8	32523	                                Tetrapoda
+  0.00	17	0	P9	32524	                                  Amniota
+  0.00	17	0	C	40674	                                    Mammalia
+  0.00	17	0	C1	32525	                                      Theria
+  0.00	17	0	C2	9347	                                        Eutheria
+  0.00	17	0	C3	1437010	                                          Boreoeutheria
+  0.00	17	0	C4	314146	                                            Euarchontoglires
+  0.00	17	0	O	9443	                                              Primates
+  0.00	17	0	O1	376913	                                                Haplorrhini
+  0.00	17	0	O2	314293	                                                  Simiiformes
+  0.00	17	0	O3	9526	                                                    Catarrhini
+  0.00	17	0	O4	314295	                                                      Hominoidea
+  0.00	17	0	F	9604	                                                        Hominidae
+  0.00	17	0	F1	207598	                                                          Homininae
+  0.00	17	0	G	9605	                                                            Homo
+  0.00	17	17	S	9606	                                                              Homo sapiens
+  0.00	8	0	K	33090	      Viridiplantae
+  0.00	8	0	P	35493	        Streptophyta
+  0.00	8	0	P1	131221	          Streptophytina
+  0.00	8	0	P2	3193	            Embryophyta
+  0.00	8	0	P3	58023	              Tracheophyta
+  0.00	8	0	P4	78536	                Euphyllophyta
+  0.00	8	0	P5	58024	                  Spermatophyta
+  0.00	4	0	C	3398	                    Magnoliopsida
+  0.00	4	0	C1	1437183	                      Mesangiospermae
+  0.00	4	0	C2	71240	                        eudicotyledons
+  0.00	4	0	C3	91827	                          Gunneridae
+  0.00	4	0	C4	1437201	                            Pentapetalae
+  0.00	4	0	C5	71274	                              asterids
+  0.00	3	0	C6	91882	                                campanulids
+  0.00	3	0	O	4209	                                  Asterales
+  0.00	3	0	F	4210	                                    Asteraceae
+  0.00	3	0	F1	102804	                                      Asteroideae
+  0.00	3	0	F2	911341	                                        Heliantheae alliance
+  0.00	3	0	F3	102814	                                          Heliantheae
+  0.00	3	0	G	4231	                                            Helianthus
+  0.00	3	3	S	4232	                                              Helianthus annuus
+  0.00	1	0	C6	91888	                                lamiids
+  0.00	1	0	O	4069	                                  Solanales
+  0.00	1	0	F	4070	                                    Solanaceae
+  0.00	1	0	F1	424554	                                      Nicotianoideae
+  0.00	1	0	F2	424562	                                        Nicotianeae
+  0.00	1	1	G	4085	                                          Nicotiana
+  0.00	4	0	P6	1437180	                    Acrogymnospermae
+  0.00	4	0	C	58019	                      Pinopsida
+  0.00	4	0	C1	3313	                        Pinidae
+  0.00	4	0	C2	2821351	                          Conifers II
+  0.00	4	0	O	1446379	                            Cupressales
+  0.00	4	0	F	3367	                              Cupressaceae
+  0.00	4	0	G	3368	                                Cryptomeria
+  0.00	4	4	S	3369	                                  Cryptomeria japonica

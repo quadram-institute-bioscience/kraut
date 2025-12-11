@@ -1,0 +1,93 @@
+100.00	522231	0	R	1	root
+100.00	522231	0	R1	131567	  cellular organisms
+100.00	522211	0	D	2	    Bacteria
+99.76	520988	0	K	3379134	      Pseudomonadati
+43.37	226482	0	P	1224	        Pseudomonadota
+43.37	226482	0	C	1236	          Gammaproteobacteria
+43.37	226482	0	O	91347	            Enterobacterales
+43.37	226482	0	F	543	              Enterobacteriaceae
+43.37	226482	0	G	590	                Salmonella
+43.37	226465	226465	S	28901	                  Salmonella enterica
+0.00	16	16	S	54736	                  Salmonella bongori
+31.09	162342	0	K1	1783270	        FCB group
+31.09	162342	0	K2	68336	          Bacteroidota/Chlorobiota group
+31.09	162342	0	P	976	            Bacteroidota
+31.08	162332	0	C	200643	              Bacteroidia
+31.08	162332	0	O	171549	                Bacteroidales
+31.08	162332	0	F	171552	                  Prevotellaceae
+31.08	162332	0	G	2974251	                    Segatella
+31.08	162332	162332	S	165179	                      Segatella copri
+0.00	10	0	C	117747	              Sphingobacteriia
+0.00	10	0	O	200666	                Sphingobacteriales
+0.00	10	0	F	84566	                  Sphingobacteriaceae
+0.00	10	0	G	376469	                    Olivibacter
+0.00	10	0	G1	2632301	                      unclassified Olivibacter
+0.00	10	10	S	2592345	                        Olivibacter sp. LS-1
+25.31	132163	0	K1	1783257	        PVC group
+25.31	132163	0	P	74201	          Verrucomicrobiota
+25.31	132163	0	C	203494	            Verrucomicrobiia
+25.31	132163	0	O	48461	              Verrucomicrobiales
+25.31	132163	0	F	1647988	                Akkermansiaceae
+25.31	132163	0	G	239934	                  Akkermansia
+25.31	132163	132163	S	239935	                    Akkermansia muciniphila
+0.23	1223	0	K	1783272	      Bacillati
+0.23	1223	0	P	1239	        Bacillota
+0.23	1223	0	C	186801	          Clostridia
+0.15	808	0	O	186802	            Eubacteriales
+0.15	781	0	F	216572	              Oscillospiraceae
+0.14	705	0	G	1263	                Ruminococcus
+0.13	654	0	G1	2608920	                  unclassified Ruminococcus
+0.10	541	541	S	3233381	                    Ruminococcus sp. JL13D9
+0.02	112	112	S	3233380	                    Ruminococcus sp. JE7B6
+0.01	26	26	S	2564099	                  Ruminococcus bovis
+0.00	24	24	S	1160721	                  Ruminococcus bicirculans (ex Wegman et al. 2014)
+0.01	75	0	G	459786	                Oscillibacter
+0.01	75	0	G1	2629304	                  unclassified Oscillibacter
+0.01	75	75	S	2109687	                    Oscillibacter sp. PEA192
+0.01	27	0	F	186806	              Eubacteriaceae
+0.01	27	0	G	1730	                Eubacterium
+0.01	27	27	S	53442	                  Eubacterium callanderi
+0.08	414	0	O	3085636	            Lachnospirales
+0.08	414	0	F	186803	              Lachnospiraceae
+0.03	157	0	G	33042	                Coprococcus
+0.01	57	0	G1	2684943	                  unclassified Coprococcus
+0.01	57	57	S	751585	                    Coprococcus sp. ART55/1
+0.02	99	99	S	33043	                  Coprococcus eutactus
+0.02	100	0	G	2569097	                Anaerobutyricum
+0.02	100	100	S	39488	                  Anaerobutyricum hallii
+0.01	63	0	G	841	                Roseburia
+0.01	63	63	S	301301	                  Roseburia hominis
+0.01	54	0	G	3342669	                Eshraghiella
+0.01	54	54	S	45851	                  Eshraghiella crossota
+0.01	38	0	G	189330	                Dorea
+0.01	38	38	S	39486	                  Dorea formicigenerans
+0.00	19	0	D	2759	    Eukaryota
+0.00	19	0	D1	33154	      Opisthokonta
+0.00	19	0	K	33208	        Metazoa
+0.00	19	0	K1	6072	          Eumetazoa
+0.00	19	0	K2	33213	            Bilateria
+0.00	19	0	K3	33511	              Deuterostomia
+0.00	19	0	P	7711	                Chordata
+0.00	19	0	P1	89593	                  Craniata
+0.00	19	0	P2	7742	                    Vertebrata
+0.00	19	0	P3	7776	                      Gnathostomata
+0.00	19	0	P4	117570	                        Teleostomi
+0.00	19	0	P5	117571	                          Euteleostomi
+0.00	19	0	P6	8287	                            Sarcopterygii
+0.00	19	0	P7	1338369	                              Dipnotetrapodomorpha
+0.00	19	0	P8	32523	                                Tetrapoda
+0.00	19	0	P9	32524	                                  Amniota
+0.00	19	0	C	40674	                                    Mammalia
+0.00	19	0	C1	32525	                                      Theria
+0.00	19	0	C2	9347	                                        Eutheria
+0.00	19	0	C3	1437010	                                          Boreoeutheria
+0.00	19	0	C4	314146	                                            Euarchontoglires
+0.00	19	0	O	9443	                                              Primates
+0.00	19	0	O1	376913	                                                Haplorrhini
+0.00	19	0	O2	314293	                                                  Simiiformes
+0.00	19	0	O3	9526	                                                    Catarrhini
+0.00	19	0	O4	314295	                                                      Hominoidea
+0.00	19	0	F	9604	                                                        Hominidae
+0.00	19	0	F1	207598	                                                          Homininae
+0.00	19	0	G	9605	                                                            Homo
+0.00	19	19	S	9606	                                                              Homo sapiens

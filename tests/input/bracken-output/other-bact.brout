@@ -1,0 +1,35 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Klebsiella pneumoniae	573	S	4262	248837	253099	0.20210
+Klebsiella quasipneumoniae	1463165	S	59	597	656	0.00052
+Klebsiella variicola	244366	S	29	737	766	0.00061
+Klebsiella quasivariicola	2026240	S	11	15	26	0.00002
+Klebsiella michiganensis	1134687	S	14	63	77	0.00006
+Salmonella enterica	28901	S	3587	228304	231891	0.18516
+Salmonella bongori	54736	S	14	2	16	0.00001
+Escherichia coli	562	S	33783	429138	462921	0.36964
+Escherichia fergusonii	564	S	34	23	57	0.00005
+Escherichia albertii	208962	S	27	9	36	0.00003
+Escherichia marmotae	1499973	S	16	6	22	0.00002
+Escherichia sp. E4742	2044467	S	14	8	22	0.00002
+Shigella flexneri	623	S	50	6319	6369	0.00509
+Shigella dysenteriae	622	S	29	258	287	0.00023
+Shigella boydii	621	S	13	225	238	0.00019
+Kosakonia radicincitans	283686	S	16	2	18	0.00001
+Scandinavium goeteborgense	1851514	S	13	1	14	0.00001
+Segatella copri	165179	S	156624	5748	162372	0.12965
+Olivibacter sp. LS-1	2592345	S	10	0	10	0.00001
+Akkermansia muciniphila	239935	S	127031	5158	132189	0.10555
+Bdellovibrio bacteriovorus	959	S	10	0	10	0.00001
+Ruminococcus sp. JL13D9	3233381	S	45	496	541	0.00043
+Ruminococcus sp. JE7B6	3233380	S	13	99	112	0.00009
+Ruminococcus bovis	2564099	S	19	8	27	0.00002
+Ruminococcus bicirculans (ex Wegman et al. 2014)	1160721	S	15	9	24	0.00002
+Oscillibacter sp. PEA192	2109687	S	10	65	75	0.00006
+Eubacterium callanderi	53442	S	12	15	27	0.00002
+Coprococcus eutactus	33043	S	35	64	99	0.00008
+Coprococcus sp. ART55/1	751585	S	21	36	57	0.00005
+Anaerobutyricum hallii	39488	S	26	74	100	0.00008
+Roseburia hominis	301301	S	21	42	63	0.00005
+Eshraghiella crossota	45851	S	26	28	54	0.00004
+Dorea formicigenerans	39486	S	11	27	38	0.00003
+Homo sapiens	9606	S	21	2	23	0.00002

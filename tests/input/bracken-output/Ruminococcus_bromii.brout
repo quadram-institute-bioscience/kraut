@@ -1,0 +1,13 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Ruminococcus sp. JL13D9	3233381	S	45	504	549	0.41876
+Ruminococcus sp. JE7B6	3233380	S	13	101	114	0.08696
+Ruminococcus bovis	2564099	S	19	12	31	0.02365
+Ruminococcus bicirculans (ex Wegman et al. 2014)	1160721	S	15	11	26	0.01983
+Oscillibacter sp. PEA192	2109687	S	10	81	91	0.06941
+Eubacterium callanderi	53442	S	12	19	31	0.02365
+Coprococcus eutactus	33043	S	35	80	115	0.08772
+Coprococcus sp. ART55/1	751585	S	21	43	64	0.04882
+Anaerobutyricum hallii	39488	S	26	88	114	0.08696
+Roseburia hominis	301301	S	21	49	70	0.05339
+Eshraghiella crossota	45851	S	26	33	59	0.04500
+Dorea formicigenerans	39486	S	11	31	42	0.03204

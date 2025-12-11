@@ -1,0 +1,77 @@
+ 54.12	251183	251183	U	0	unclassified
+ 45.88	212973	4084	R	1	root
+ 45.00	208889	221	R1	131567	  cellular organisms
+ 44.96	208667	4687	D	2	    Bacteria
+ 43.95	203980	367	K	3379134	      Pseudomonadati
+ 43.87	203608	998	P	1224	        Pseudomonadota
+ 43.65	202610	2313	C	1236	          Gammaproteobacteria
+ 43.15	200297	5189	O	91347	            Enterobacterales
+ 42.03	195099	189714	F	543	              Enterobacteriaceae
+  1.14	5309	3997	G	561	                Escherichia
+  0.27	1269	1251	S	562	                  Escherichia coli
+  0.00	6	6	S1	83334	                    Escherichia coli O157:H7
+  0.00	6	6	S1	1329907	                    Escherichia coli APEC IMT5155
+  0.00	6	6	S1	2778657	                    Escherichia coli O9:H10
+  0.00	20	20	S	564	                  Escherichia fergusonii
+  0.00	10	10	S	208962	                  Escherichia albertii
+  0.00	7	7	S	1499973	                  Escherichia marmotae
+  0.00	6	0	G1	2608889	                  unclassified Escherichia
+  0.00	6	6	S	2044467	                    Escherichia sp. E4742
+  0.01	41	6	G	620	                Shigella
+  0.00	17	10	S	623	                  Shigella flexneri
+  0.00	7	7	S1	41434	                    Shigella flexneri 1b
+  0.00	12	12	S	622	                  Shigella dysenteriae
+  0.00	6	6	S	621	                  Shigella boydii
+  0.00	20	7	G	544	                Citrobacter
+  0.00	9	0	G1	1344959	                  Citrobacter freundii complex
+  0.00	6	6	S	57706	                    Citrobacter braakii
+  0.00	3	3	S	67827	                    Citrobacter werkmanii
+  0.00	2	2	S	67824	                  Citrobacter farmeri
+  0.00	2	0	G1	2644389	                  unclassified Citrobacter
+  0.00	2	2	S	1573676	                    Citrobacter sp. R56
+  0.00	7	0	F1	2890311	                Klebsiella/Raoultella group
+  0.00	7	0	G	570	                  Klebsiella
+  0.00	7	0	G1	3390273	                    Klebsiella pneumoniae complex
+  0.00	7	7	S	244366	                      Klebsiella variicola
+  0.00	5	0	G	2726810	                Scandinavium
+  0.00	5	5	S	1851514	                  Scandinavium goeteborgense
+  0.00	1	1	G	547	                Enterobacter
+  0.00	1	1	G	590	                Salmonella
+  0.00	1	0	G	158876	                Yokenella
+  0.00	1	1	S	158877	                  Yokenella regensburgei
+  0.00	8	6	F	1903409	              Erwiniaceae
+  0.00	2	0	G	53335	                Pantoea
+  0.00	2	2	G1	2630326	                  unclassified Pantoea
+  0.00	1	0	F	1903410	              Pectobacteriaceae
+  0.00	1	0	G	1082702	                Lonsdalea
+  0.00	1	1	S	1082704	                  Lonsdalea britannica
+  0.00	5	0	P	3018035	        Bdellovibrionota
+  0.00	5	0	C	3031418	          Bdellovibrionia
+  0.00	5	0	O	213481	            Bdellovibrionales
+  0.00	5	0	F	213483	              Pseudobdellovibrionaceae
+  0.00	5	0	G	958	                Bdellovibrio
+  0.00	5	0	S	959	                  Bdellovibrio bacteriovorus
+  0.00	5	5	S1	1069642	                    Bdellovibrio bacteriovorus str. Tiberius
+  0.00	1	0	D	2759	    Eukaryota
+  0.00	1	0	K	33090	      Viridiplantae
+  0.00	1	0	P	35493	        Streptophyta
+  0.00	1	0	P1	131221	          Streptophytina
+  0.00	1	0	P2	3193	            Embryophyta
+  0.00	1	0	P3	58023	              Tracheophyta
+  0.00	1	0	P4	78536	                Euphyllophyta
+  0.00	1	0	P5	58024	                  Spermatophyta
+  0.00	1	0	C	3398	                    Magnoliopsida
+  0.00	1	0	C1	1437183	                      Mesangiospermae
+  0.00	1	0	C2	71240	                        eudicotyledons
+  0.00	1	0	C3	91827	                          Gunneridae
+  0.00	1	0	C4	1437201	                            Pentapetalae
+  0.00	1	0	C5	71275	                              rosids
+  0.00	1	0	C6	91835	                                fabids
+  0.00	1	0	O	3646	                                  Malpighiales
+  0.00	1	0	F	3977	                                    Euphorbiaceae
+  0.00	1	0	F1	235633	                                      Euphorbioideae
+  0.00	1	0	F2	235895	                                        Euphorbieae
+  0.00	1	0	G	3990	                                          Euphorbia
+  0.00	1	0	G1	1334278	                                            Euphorbia subgen. Esula
+  0.00	1	0	G2	1334446	                                              Euphorbia sect. Lathyris
+  0.00	1	1	S	212925	                                                Euphorbia lathyris

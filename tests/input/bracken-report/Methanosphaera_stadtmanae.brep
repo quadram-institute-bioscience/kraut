@@ -1,0 +1,11 @@
+100.00	65536	0	R	1	root
+100.00	65536	0	R1	131567	  cellular organisms
+100.00	65536	0	D	2157	    Archaea
+100.00	65536	0	K	3366610	      Methanobacteriati
+100.00	65536	0	P	28890	        Methanobacteriota
+100.00	65536	0	P1	2283794	          Methanomada group
+100.00	65536	0	C	183925	            Methanobacteria
+100.00	65536	0	O	2158	              Methanobacteriales
+100.00	65536	0	F	2159	                Methanobacteriaceae
+100.00	65536	0	G	2316	                  Methanosphaera
+100.00	65536	65536	S	2317	                    Methanosphaera stadtmanae

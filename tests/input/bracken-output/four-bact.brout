@@ -1,0 +1,19 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Salmonella enterica	28901	S	3574	222891	226465	0.43365
+Salmonella bongori	54736	S	14	2	16	0.00003
+Segatella copri	165179	S	156624	5708	162332	0.31084
+Olivibacter sp. LS-1	2592345	S	10	0	10	0.00002
+Akkermansia muciniphila	239935	S	127031	5132	132163	0.25307
+Ruminococcus sp. JL13D9	3233381	S	45	496	541	0.00104
+Ruminococcus sp. JE7B6	3233380	S	13	99	112	0.00021
+Ruminococcus bovis	2564099	S	19	7	26	0.00005
+Ruminococcus bicirculans (ex Wegman et al. 2014)	1160721	S	15	9	24	0.00005
+Oscillibacter sp. PEA192	2109687	S	10	65	75	0.00014
+Eubacterium callanderi	53442	S	12	15	27	0.00005
+Coprococcus eutactus	33043	S	35	64	99	0.00019
+Coprococcus sp. ART55/1	751585	S	21	36	57	0.00011
+Anaerobutyricum hallii	39488	S	26	74	100	0.00019
+Roseburia hominis	301301	S	21	42	63	0.00012
+Eshraghiella crossota	45851	S	26	28	54	0.00010
+Dorea formicigenerans	39486	S	11	27	38	0.00007
+Homo sapiens	9606	S	17	2	19	0.00004

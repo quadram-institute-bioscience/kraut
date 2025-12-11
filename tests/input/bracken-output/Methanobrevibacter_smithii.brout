@@ -1,0 +1,6 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Methanobrevibacter smithii	2173	S	58959	16797	75756	0.99709
+Methanobrevibacter intestini	2911853	S	65	75	140	0.00184
+Methanobrevibacter sp. TLL-48-HuF1	2870563	S	23	32	55	0.00072
+Methanobrevibacter acididurans	120963	S	10	0	10	0.00013
+Homo sapiens	9606	S	15	0	15	0.00020

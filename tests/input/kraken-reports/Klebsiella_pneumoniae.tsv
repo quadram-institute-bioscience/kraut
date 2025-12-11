@@ -1,0 +1,68 @@
+ 54.24	308156	308156	U	0	unclassified
+ 45.76	260010	4420	R	1	root
+ 44.99	255590	84	R1	131567	  cellular organisms
+ 44.97	255505	3059	D	2	    Bacteria
+ 44.43	252446	368	K	3379134	      Pseudomonadati
+ 44.37	252078	1620	P	1224	        Pseudomonadota
+ 44.08	250458	12714	C	1236	          Gammaproteobacteria
+ 41.84	237735	11386	O	91347	            Enterobacterales
+ 39.84	226334	25449	F	543	              Enterobacteriaceae
+ 35.35	200870	3590	F1	2890311	                Klebsiella/Raoultella group
+ 34.72	197280	191763	G	570	                  Klebsiella
+  0.97	5492	1140	G1	3390273	                    Klebsiella pneumoniae complex
+  0.75	4260	4085	S	573	                      Klebsiella pneumoniae
+  0.03	174	27	S1	72407	                        Klebsiella pneumoniae subsp. pneumoniae
+  0.02	127	127	S2	1125630	                          Klebsiella pneumoniae subsp. pneumoniae HS11286
+  0.00	20	20	S2	1193292	                          Klebsiella pneumoniae subsp. pneumoniae 1084
+  0.00	1	1	S1	1328373	                        Klebsiella pneumoniae MGH 39
+  0.01	59	52	S	1463165	                      Klebsiella quasipneumoniae
+  0.00	7	7	S1	1463164	                        Klebsiella quasipneumoniae subsp. similipneumoniae
+  0.00	22	8	S	244366	                      Klebsiella variicola
+  0.00	14	14	S1	2590157	                        Klebsiella variicola subsp. variicola
+  0.00	11	11	S	2026240	                      Klebsiella quasivariicola
+  0.00	11	6	G1	2608929	                    unclassified Klebsiella
+  0.00	5	5	S	2267618	                      Klebsiella sp. P1CD1
+  0.00	7	7	S	1134687	                    Klebsiella michiganensis
+  0.00	4	4	S	2489010	                    Klebsiella africana
+  0.00	3	3	S	548	                    Klebsiella aerogenes
+  0.00	5	0	G	2726810	                Scandinavium
+  0.00	5	5	S	1851514	                  Scandinavium goeteborgense
+  0.00	5	0	G	1330547	                Kosakonia
+  0.00	5	5	S	283686	                  Kosakonia radicincitans
+  0.00	3	0	G	590	                Salmonella
+  0.00	3	3	S	28901	                  Salmonella enterica
+  0.00	1	1	G	547	                Enterobacter
+  0.00	1	0	G	561	                Escherichia
+  0.00	1	1	S	562	                  Escherichia coli
+  0.00	7	0	F	1903411	              Yersiniaceae
+  0.00	7	7	G	613	                Serratia
+  0.00	5	0	F	1903409	              Erwiniaceae
+  0.00	5	5	G	53335	                Pantoea
+  0.00	3	0	F	1903412	              Hafniaceae
+  0.00	3	0	G	635	                Edwardsiella
+  0.00	3	3	S	636	                  Edwardsiella tarda
+  0.00	7	0	O	72274	            Pseudomonadales
+  0.00	7	0	F	135621	              Pseudomonadaceae
+  0.00	7	0	G	286	                Pseudomonas
+  0.00	7	7	S	1499686	                  Pseudomonas saudiphocaensis
+  0.00	1	0	O	135623	            Vibrionales
+  0.00	1	1	F	641	              Vibrionaceae
+  0.00	1	0	O	2887326	            Moraxellales
+  0.00	1	0	F	468	              Moraxellaceae
+  0.00	1	0	G	1604696	                Faucicola
+  0.00	1	1	S	1309795	                  Faucicola mancuniensis
+  0.00	1	0	D	2759	    Eukaryota
+  0.00	1	0	K	33090	      Viridiplantae
+  0.00	1	0	P	35493	        Streptophyta
+  0.00	1	0	P1	131221	          Streptophytina
+  0.00	1	0	P2	3193	            Embryophyta
+  0.00	1	0	P3	58023	              Tracheophyta
+  0.00	1	0	P4	78536	                Euphyllophyta
+  0.00	1	0	P5	58024	                  Spermatophyta
+  0.00	1	0	C	3398	                    Magnoliopsida
+  0.00	1	0	C1	1437183	                      Mesangiospermae
+  0.00	1	0	O	41768	                        Ranunculales
+  0.00	1	0	F	3465	                          Papaveraceae
+  0.00	1	0	F1	1462614	                            Papaveroideae
+  0.00	1	0	G	3468	                              Papaver
+  0.00	1	1	S	3469	                                Papaver somniferum

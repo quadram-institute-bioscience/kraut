@@ -1,0 +1,15 @@
+100.00	212904	0	R	1	root
+100.00	212904	0	R1	131567	  cellular organisms
+100.00	212904	0	D	2	    Bacteria
+100.00	212904	0	K	3379134	      Pseudomonadati
+100.00	212904	0	P	1224	        Pseudomonadota
+100.00	212904	0	C	1236	          Gammaproteobacteria
+100.00	212904	0	O	91347	            Enterobacterales
+100.00	212904	0	F	543	              Enterobacteriaceae
+86.00	183100	0	G	561	                Escherichia
+85.90	182887	182887	S	562	                  Escherichia coli
+0.08	167	167	S	564	                  Escherichia fergusonii
+0.02	45	45	S	208962	                  Escherichia albertii
+14.00	29803	0	G	620	                Shigella
+13.41	28543	28543	S	623	                  Shigella flexneri
+0.59	1259	1259	S	622	                  Shigella dysenteriae
