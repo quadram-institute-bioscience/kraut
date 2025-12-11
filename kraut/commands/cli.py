@@ -1,5 +1,4 @@
 import typer
-import rich
 from .import single_report
 from .import merge_reports
 from .import make_table_cmd

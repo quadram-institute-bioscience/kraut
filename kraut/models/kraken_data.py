@@ -1,5 +1,4 @@
-from typing import List, Optional, Dict, Union
-import sys
+from typing import List, Optional, Dict
 
 class KrakenNode:
     def __init__(

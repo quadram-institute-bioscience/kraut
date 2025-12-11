@@ -1,6 +1,5 @@
-from typing import List, Dict, Union, Optional
+from typing import List, Dict
 import pandas as pd
-import os
 from .kraken_data import KrakenReport, KrakenNode
 
 class MultiKrakenReport:
@@ -112,7 +111,8 @@ class MultiKrakenReport:
         
         # Map old 'COUNTS' to 'TOT' for backward compatibility defaults if needed, 
         # or just assume caller uses new constants.
-        if metric == 'COUNTS': metric = 'TOT'
+        if metric == 'COUNTS':
+            metric = 'TOT'
             
         df = self.to_dataframe(metric, level, use_taxid, rank_prefix)
         

@@ -2,7 +2,6 @@ import typer
 import pandas as pd
 from typing import Optional
 from pathlib import Path
-import sys
 
 def run(
     input_file: Path = typer.Option(..., "--input", "-i", help="Input table (KrakenTools combined format)"),
