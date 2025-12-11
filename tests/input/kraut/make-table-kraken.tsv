@@ -1,0 +1,172 @@
+#Taxon	Akkermansia_muciniphila	Escherichia_coli_K12	Escherichia_coli_O157-H7	Klebsiella_pneumoniae	Mediterraneibacter_gnavus	Methanobrevibacter_smithii	Methanosphaera_stadtmanae	Ruminococcus_bromii	Salmonella_enterica_Typhimurium	Segatella_copri	all_genomes	archea	four-bact	other-bact	two-bact
+Akkermansia muciniphila	127031	0	0	0	0	0	0	0	0	0	127031	0	127031	127031	127031
+Akkermansia sp. BCRC 18949	2	0	0	0	0	0	0	0	0	0	2	0	2	2	2
+Akkermansia sp. JRP_AM1	1	0	0	0	0	0	0	0	0	0	1	0	1	1	1
+Pedobacter sp. G11	1	0	0	0	0	0	0	0	0	0	1	0	1	1	1
+Escherichia coli	0	1269	32513	1	0	0	0	0	0	0	33783	0	0	33783	0
+Escherichia fergusonii	0	20	14	0	0	0	0	0	0	0	34	0	0	34	0
+Escherichia albertii	0	10	11	0	0	0	0	0	6	0	27	0	6	27	0
+Escherichia marmotae	0	7	9	0	0	0	0	0	0	0	16	0	0	16	0
+Escherichia sp. E4742	0	6	8	0	0	0	0	0	0	0	14	0	0	14	0
+Shigella flexneri	0	17	33	0	0	0	0	0	0	0	50	0	0	50	0
+Shigella dysenteriae	0	12	17	0	0	0	0	0	0	0	29	0	0	29	0
+Shigella boydii	0	6	7	0	0	0	0	0	0	0	13	0	0	13	0
+Citrobacter braakii	0	6	0	0	0	0	0	0	0	0	6	0	0	6	0
+Citrobacter werkmanii	0	3	3	0	0	0	0	0	0	0	6	0	0	6	0
+Citrobacter farmeri	0	2	5	0	0	0	0	0	0	0	7	0	0	7	0
+Citrobacter sp. R56	0	2	0	0	0	0	0	0	0	0	2	0	0	2	0
+Klebsiella variicola	0	7	0	22	0	0	0	0	0	0	29	0	0	29	0
+Scandinavium goeteborgense	0	5	3	5	0	0	0	0	0	0	13	0	0	13	0
+Yokenella regensburgei	0	1	0	0	0	0	0	0	5	0	6	0	5	6	0
+Lonsdalea britannica	0	1	1	0	0	0	0	0	0	0	2	0	0	2	0
+Bdellovibrio bacteriovorus	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Euphorbia lathyris	0	1	3	0	0	0	0	0	0	0	4	0	0	4	0
+Salmonella enterica	0	0	10	3	0	0	0	0	3574	0	3587	0	3574	3587	0
+Citrobacter sedlakii	0	0	2	0	0	0	0	0	0	0	2	0	0	2	0
+Citrobacter rodentium	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0
+Kosakonia radicincitans	0	0	6	5	0	0	0	0	5	0	16	0	5	16	0
+Enterobacter roggenkampii	0	0	5	0	0	0	0	0	0	0	5	0	0	5	0
+Klebsiella michiganensis	0	0	3	7	0	0	0	0	4	0	14	0	4	14	0
+Klebsiella pneumoniae	0	0	2	4260	0	0	0	0	0	0	4262	0	0	4262	0
+Homo sapiens	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Klebsiella quasipneumoniae	0	0	0	59	0	0	0	0	0	0	59	0	0	59	0
+Klebsiella quasivariicola	0	0	0	11	0	0	0	0	0	0	11	0	0	11	0
+Klebsiella sp. P1CD1	0	0	0	5	0	0	0	0	0	0	5	0	0	5	0
+Klebsiella africana	0	0	0	4	0	0	0	0	0	0	4	0	0	4	0
+Klebsiella aerogenes	0	0	0	3	0	0	0	0	0	0	3	0	0	3	0
+Edwardsiella tarda	0	0	0	3	0	0	0	0	0	0	3	0	0	3	0
+Pseudomonas saudiphocaensis	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Faucicola mancuniensis	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Papaver somniferum	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Mediterraneibacter gnavus	0	0	0	0	138096	0	0	9	0	0	138105	0	9	9	9
+Mediterraneibacter glycyrrhizinilyticus	0	0	0	0	7	0	0	0	0	0	7	0	0	0	0
+[Ruminococcus] torques	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Blautia wexlerae	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Blautia massiliensis (ex Durand et al. 2017)	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Dorea longicatena	0	0	0	0	12	0	0	0	0	0	12	0	0	0	0
+Anaerostipes caccae	0	0	0	0	7	0	0	0	0	0	7	0	0	0	0
+Sulfurimonas marina	0	0	0	0	3	0	0	0	0	0	3	0	0	0	0
+Solanum lycopersicum	0	0	0	0	4	0	1	0	0	0	5	1	0	0	0
+Salvia splendens	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Lactuca sativa	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Rutidosis leptorrhynchoides	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Malania oleifera	0	0	0	0	4	7	0	0	0	0	11	7	0	0	0
+Populus nigra	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Oryza glaberrima	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Sorghum bicolor	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Musa acuminata	0	0	0	0	4	6	1	0	0	0	11	7	0	0	0
+Cryptomeria japonica	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Methanobrevibacter smithii	0	0	0	0	0	58959	0	0	0	0	58959	58959	0	0	0
+Methanobrevibacter intestini	0	0	0	0	0	65	0	0	0	0	65	65	0	0	0
+Methanobrevibacter sp. TLL-48-HuF1	0	0	0	0	0	23	0	0	0	0	23	23	0	0	0
+Methanobrevibacter sp. YE315	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Methanobrevibacter acididurans	0	0	0	0	0	10	0	0	0	0	10	10	0	0	0
+Methanosphaera sp. BMS	0	0	0	0	0	4	8	0	0	0	12	12	0	0	0
+Acidianus manzaensis	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Carya illinoinensis	0	0	0	0	0	6	0	0	0	0	6	6	0	0	0
+Castanea sativa	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Lupinus angustifolius	0	0	0	0	0	5	0	0	0	0	5	5	0	0	0
+Vicia villosa	0	0	0	0	0	2	1	0	0	0	3	3	0	0	0
+Hevea brasiliensis	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Cannabis sativa	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Pyrus communis	0	0	0	0	0	1	2	0	0	0	3	3	0	0	0
+Sesamum indicum	0	0	0	0	0	6	0	0	0	0	6	6	0	0	0
+Salvia hispanica	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Capsicum annuum	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Solanum pennellii	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Solanum stenotomum	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Apium graveolens	0	0	0	0	0	3	1	0	0	0	4	4	0	0	0
+Beta vulgaris	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Phoenix dactylifera	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Plasmodium vinckei	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Candidatus Syntrophocurvum alkaliphilum	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Clostridium pasteurianum	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Lentibacillus sp. CBA3610	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Anaerococcus sp. WGS1579	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Leifsonia sp. P73	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Fusobacterium pseudoperiodonticum	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Marinitoga aeolica	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Methanosphaera stadtmanae	0	0	0	0	0	0	64777	0	0	0	64777	64777	0	0	0
+Gossypium raimondii	0	0	0	0	0	0	7	0	0	0	7	7	0	0	0
+Theobroma cacao	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Citrus sinensis	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Raphanus sativus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Juglans microcarpa x Juglans regia	0	0	0	0	0	0	5	0	0	0	5	5	0	0	0
+Cajanus cajan	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Vigna radiata	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Helianthus annuus	0	0	0	0	0	0	4	0	0	3	7	4	3	3	0
+Cynara cardunculus	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Daucus carota	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Impatiens glandulifera	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Amaranthus tricolor	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Silene latifolia	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Curcuma longa	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Rhizophagus irregularis	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Plasmodium relictum	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Bacillus thuringiensis	0	0	0	0	0	0	5	0	0	0	5	5	0	0	0
+Paenibacillus sp. SN-8-1	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Clostridium botulinum	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Clostridium tagluense	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Anabaena sp. WA102	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Polaribacter staleyi	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Psychroserpens sp. NJDZ02	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Cloacibacterium normanense	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Phocaeicola vulgatus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Ignavibacterium sp.	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Campylobacter armoricus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Ruminococcus sp. JL13D9	0	0	0	0	0	0	0	45	0	0	45	0	45	45	45
+Ruminococcus sp. JE7B6	0	0	0	0	0	0	0	13	0	0	13	0	13	13	13
+Ruminococcus bovis	0	0	0	0	0	0	0	19	0	0	19	0	19	19	19
+Ruminococcus bicirculans (ex Wegman et al. 2014)	0	0	0	0	0	0	0	15	0	0	15	0	15	15	15
+Ruminococcus gauvreauii	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Ruminococcus albus	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Oscillibacter sp. PEA192	0	0	0	0	0	0	0	10	0	0	10	0	10	10	10
+Ruminiclostridium cellulolyticum	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Clostridium sp. SY8519	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Clostridium thermosuccinogenes	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Eubacterium callanderi	0	0	0	0	0	0	0	12	0	0	12	0	12	12	12
+Fenollaria massiliensis	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Coprococcus eutactus	0	0	0	0	0	0	0	35	0	0	35	0	35	35	35
+Coprococcus sp. ART55/1	0	0	0	0	0	0	0	21	0	0	21	0	21	21	21
+Coprococcus catus	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Anaerobutyricum hallii	0	0	0	0	0	0	0	26	0	0	26	0	26	26	26
+Roseburia hominis	0	0	0	0	0	0	0	21	0	0	21	0	21	21	21
+Roseburia faecis	0	0	0	0	0	0	0	7	0	0	7	0	7	7	7
+Eshraghiella crossota	0	0	0	0	0	0	0	26	0	0	26	0	26	26	26
+Blautia obeum	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+[Ruminococcus] lactaris	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Dorea formicigenerans	0	0	0	0	0	0	0	11	0	0	11	0	11	11	11
+[Clostridium] symbiosum	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Vallitalea pronyensis	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Terrisporobacter hibernicus	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Paenibacillus jilunlii	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Alkalihalobacillus sp. LMS39	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Lacticaseibacillus rhamnosus	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Ligilactobacillus acidipiscis	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Companilactobacillus ginsenosidimutans	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Anaerococcus vaginalis	0	0	0	0	0	0	0	7	0	0	7	0	7	7	7
+Caldicellulosiruptor owensensis	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+[Eubacterium] hominis	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Schaalia radingae	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Spiroplasma culicicola	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Prevotella melaninogenica	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Treponema peruense	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Leptospira kmetyi	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Thermocrinis albus	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Pseudemcibacter aquimaris	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Limnohabitans sp. 103DPR2	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Panicum virgatum	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Elaeis guineensis	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Argentina anserina	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Cucumis melo	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Glycine soja	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Salmonella bongori	0	0	0	0	0	0	0	0	14	0	14	0	14	14	0
+Enterobacter kobei	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Kosakonia sp. SMBL-WEM22	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Citrobacter koseri	0	0	0	0	0	0	0	0	4	0	4	0	4	4	0
+Leclercia adecarboxylata	0	0	0	0	0	0	0	0	1	0	1	0	1	1	0
+Siccibacter turicensis	0	0	0	0	0	0	0	0	1	0	1	0	1	1	0
+Providencia heimbachae	0	0	0	0	0	0	0	0	1	0	1	0	1	1	0
+Segatella copri	0	0	0	0	0	0	0	0	0	156624	156624	0	156624	156624	0
+Prevotella corporis	0	0	0	0	0	0	0	0	0	1	1	0	1	1	0
+Olivibacter sp. LS-1	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0

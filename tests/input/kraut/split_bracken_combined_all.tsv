@@ -1,0 +1,175 @@
+#Taxon	Akkermansia_muciniphila	Escherichia_coli_K12	Escherichia_coli_O157-H7	Klebsiella_pneumoniae	Mediterraneibacter_gnavus	Methanobrevibacter_smithii	Methanosphaera_stadtmanae	Ruminococcus_bromii	Salmonella_enterica_Typhimurium	Segatella_copri	all_genomes	archea	four-bact	other-bact	two-bact
+unclassified	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+root	132262	212904	257152	259944	157352	75977	65536	1311	226404	162249	1551305	141539	522231	1252352	133575
+cellular organisms	132262	212904	257152	259944	157352	75977	65536	1311	226404	162249	1551305	141539	522231	1252352	133575
+Bacteria	132262	212904	257152	259944	157352	0	0	1311	226404	162231	1409644	0	522211	1252328	133575
+Pseudomonadati	132262	212904	257152	259944	0	0	0	0	226404	162231	1250453	0	520988	1251104	132350
+Pseudomonadota	0	212904	257152	259944	0	0	0	0	226404	0	955907	0	226482	956522	0
+Gammaproteobacteria	0	212904	257152	259944	0	0	0	0	226404	0	955907	0	226482	956522	0
+Enterobacterales	0	212904	257152	259944	0	0	0	0	226404	0	955907	0	226482	956522	0
+Enterobacteriaceae	0	212904	257152	259944	0	0	0	0	226404	0	955907	0	226482	956522	0
+Escherichia	0	183100	254907	0	0	0	0	0	0	0	462673	0	0	463059	0
+Escherichia coli	0	182887	254874	0	0	0	0	0	0	0	462535	0	0	462921	0
+Escherichia fergusonii	0	167	19	0	0	0	0	0	0	0	57	0	0	57	0
+Escherichia albertii	0	45	13	0	0	0	0	0	0	0	36	0	0	36	0
+Escherichia marmotae	0	0	0	0	0	0	0	0	0	0	22	0	0	22	0
+unclassified Escherichia	0	0	0	0	0	0	0	0	0	0	22	0	0	22	0
+Escherichia sp. E4742	0	0	0	0	0	0	0	0	0	0	22	0	0	22	0
+Salmonella	0	0	58	0	0	0	0	0	226404	0	231813	0	226482	231908	0
+Salmonella enterica	0	0	58	0	0	0	0	0	226388	0	231796	0	226465	231891	0
+Salmonella bongori	0	0	0	0	0	0	0	0	16	0	16	0	16	16	0
+Klebsiella/Raoultella group	0	0	0	259944	0	0	0	0	0	0	254499	0	0	254627	0
+Klebsiella	0	0	0	259944	0	0	0	0	0	0	254499	0	0	254627	0
+Klebsiella pneumoniae complex	0	0	0	259944	0	0	0	0	0	0	254421	0	0	254549	0
+Klebsiella pneumoniae	0	0	0	258564	0	0	0	0	0	0	252972	0	0	253099	0
+Klebsiella variicola	0	0	0	689	0	0	0	0	0	0	766	0	0	766	0
+Klebsiella quasipneumoniae	0	0	0	665	0	0	0	0	0	0	656	0	0	656	0
+Klebsiella quasivariicola	0	0	0	26	0	0	0	0	0	0	26	0	0	26	0
+Klebsiella michiganensis	0	0	0	0	0	0	0	0	0	0	77	0	0	77	0
+Shigella	0	29803	2186	0	0	0	0	0	0	0	6889	0	0	6895	0
+Shigella flexneri	0	28543	2088	0	0	0	0	0	0	0	6363	0	0	6369	0
+Shigella dysenteriae	0	1259	97	0	0	0	0	0	0	0	286	0	0	287	0
+Shigella boydii	0	0	0	0	0	0	0	0	0	0	238	0	0	238	0
+Kosakonia	0	0	0	0	0	0	0	0	0	0	18	0	0	18	0
+Kosakonia radicincitans	0	0	0	0	0	0	0	0	0	0	18	0	0	18	0
+Scandinavium	0	0	0	0	0	0	0	0	0	0	14	0	0	14	0
+Scandinavium goeteborgense	0	0	0	0	0	0	0	0	0	0	14	0	0	14	0
+PVC group	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+Verrucomicrobiota	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+Verrucomicrobiia	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+Verrucomicrobiales	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+Akkermansiaceae	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+Akkermansia	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+Akkermansia muciniphila	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+FCB group	0	0	0	0	0	0	0	0	0	162231	162357	0	162342	162382	0
+Bacteroidota/Chlorobiota group	0	0	0	0	0	0	0	0	0	162231	162357	0	162342	162382	0
+Bacteroidota	0	0	0	0	0	0	0	0	0	162231	162357	0	162342	162382	0
+Bacteroidia	0	0	0	0	0	0	0	0	0	162221	162347	0	162332	162372	0
+Bacteroidales	0	0	0	0	0	0	0	0	0	162221	162347	0	162332	162372	0
+Prevotellaceae	0	0	0	0	0	0	0	0	0	162221	162347	0	162332	162372	0
+Segatella	0	0	0	0	0	0	0	0	0	162221	162347	0	162332	162372	0
+Segatella copri	0	0	0	0	0	0	0	0	0	162221	162347	0	162332	162372	0
+Sphingobacteriia	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Sphingobacteriales	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Sphingobacteriaceae	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Olivibacter	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+unclassified Olivibacter	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Olivibacter sp. LS-1	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Bdellovibrionota	0	0	0	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrionia	0	0	0	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrionales	0	0	0	0	0	0	0	0	0	0	10	0	0	10	0
+Pseudobdellovibrionaceae	0	0	0	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrio	0	0	0	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrio bacteriovorus	0	0	0	0	0	0	0	0	0	0	10	0	0	10	0
+Bacillati	0	0	0	0	157352	0	0	1311	0	0	159190	0	1223	1223	1224
+Bacillota	0	0	0	0	157352	0	0	1311	0	0	159190	0	1223	1223	1224
+Clostridia	0	0	0	0	157352	0	0	1311	0	0	159190	0	1223	1223	1224
+Lachnospirales	0	0	0	0	157352	0	0	467	0	0	158451	0	414	415	415
+Lachnospiraceae	0	0	0	0	157352	0	0	467	0	0	158451	0	414	415	415
+Mediterraneibacter	0	0	0	0	157338	0	0	0	0	0	158247	0	0	0	0
+Mediterraneibacter gnavus	0	0	0	0	157338	0	0	0	0	0	158247	0	0	0	0
+Coprococcus	0	0	0	0	0	0	0	180	0	0	95	0	157	157	157
+Coprococcus eutactus	0	0	0	0	0	0	0	115	0	0	58	0	99	99	99
+unclassified Coprococcus	0	0	0	0	0	0	0	64	0	0	36	0	57	57	57
+Coprococcus sp. ART55/1	0	0	0	0	0	0	0	64	0	0	36	0	57	57	57
+Anaerobutyricum	0	0	0	0	0	0	0	114	0	0	34	0	100	100	100
+Anaerobutyricum hallii	0	0	0	0	0	0	0	114	0	0	34	0	100	100	100
+Roseburia	0	0	0	0	0	0	0	70	0	0	21	0	63	63	63
+Roseburia hominis	0	0	0	0	0	0	0	70	0	0	21	0	63	63	63
+Eshraghiella	0	0	0	0	0	0	0	59	0	0	26	0	54	54	54
+Eshraghiella crossota	0	0	0	0	0	0	0	59	0	0	26	0	54	54	54
+Dorea	0	0	0	0	13	0	0	42	0	0	24	0	38	38	38
+Dorea formicigenerans	0	0	0	0	0	0	0	42	0	0	11	0	38	38	38
+Dorea longicatena	0	0	0	0	13	0	0	0	0	0	13	0	0	0	0
+Eubacteriales	0	0	0	0	0	0	0	844	0	0	739	0	808	808	809
+Oscillospiraceae	0	0	0	0	0	0	0	812	0	0	724	0	781	781	781
+Ruminococcus	0	0	0	0	0	0	0	721	0	0	690	0	705	705	705
+unclassified Ruminococcus	0	0	0	0	0	0	0	663	0	0	648	0	654	654	654
+Ruminococcus sp. JL13D9	0	0	0	0	0	0	0	549	0	0	537	0	541	541	541
+Ruminococcus sp. JE7B6	0	0	0	0	0	0	0	114	0	0	111	0	112	112	112
+Ruminococcus bovis	0	0	0	0	0	0	0	31	0	0	24	0	26	27	27
+Ruminococcus bicirculans (ex Wegman et al. 2014)	0	0	0	0	0	0	0	26	0	0	17	0	24	24	24
+Oscillibacter	0	0	0	0	0	0	0	91	0	0	33	0	75	75	75
+unclassified Oscillibacter	0	0	0	0	0	0	0	91	0	0	33	0	75	75	75
+Oscillibacter sp. PEA192	0	0	0	0	0	0	0	91	0	0	33	0	75	75	75
+Eubacteriaceae	0	0	0	0	0	0	0	31	0	0	14	0	27	27	27
+Eubacterium	0	0	0	0	0	0	0	31	0	0	14	0	27	27	27
+Eubacterium callanderi	0	0	0	0	0	0	0	31	0	0	14	0	27	27	27
+Archaea	0	0	0	0	0	75961	65536	0	0	0	141556	141509	0	0	0
+Methanobacteriati	0	0	0	0	0	75961	65536	0	0	0	141556	141509	0	0	0
+Methanobacteriota	0	0	0	0	0	75961	65536	0	0	0	141556	141509	0	0	0
+Methanomada group	0	0	0	0	0	75961	65536	0	0	0	141556	141509	0	0	0
+Methanobacteria	0	0	0	0	0	75961	65536	0	0	0	141556	141509	0	0	0
+Methanobacteriales	0	0	0	0	0	75961	65536	0	0	0	141556	141509	0	0	0
+Methanobacteriaceae	0	0	0	0	0	75961	65536	0	0	0	141556	141509	0	0	0
+Methanobrevibacter	0	0	0	0	0	75961	0	0	0	0	76064	76036	0	0	0
+Methanobrevibacter smithii	0	0	0	0	0	75756	0	0	0	0	75858	75830	0	0	0
+Methanobrevibacter intestini	0	0	0	0	0	140	0	0	0	0	140	140	0	0	0
+unclassified Methanobrevibacter	0	0	0	0	0	55	0	0	0	0	55	55	0	0	0
+Methanobrevibacter sp. TLL-48-HuF1	0	0	0	0	0	55	0	0	0	0	55	55	0	0	0
+Methanobrevibacter acididurans	0	0	0	0	0	10	0	0	0	0	10	10	0	0	0
+Methanosphaera	0	0	0	0	0	0	65536	0	0	0	65491	65473	0	0	0
+Methanosphaera stadtmanae	0	0	0	0	0	0	65536	0	0	0	65479	65461	0	0	0
+unclassified Methanosphaera	0	0	0	0	0	0	0	0	0	0	12	12	0	0	0
+Methanosphaera sp. BMS	0	0	0	0	0	0	0	0	0	0	12	12	0	0	0
+Eukaryota	0	0	0	0	0	15	0	0	0	17	105	29	19	23	0
+Opisthokonta	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Metazoa	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Eumetazoa	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Bilateria	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Deuterostomia	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Chordata	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Craniata	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Vertebrata	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Gnathostomata	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Teleostomi	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Euteleostomi	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Sarcopterygii	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Dipnotetrapodomorpha	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Tetrapoda	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Amniota	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Mammalia	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Theria	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Eutheria	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Boreoeutheria	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Euarchontoglires	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Primates	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Haplorrhini	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Simiiformes	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Catarrhini	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Hominoidea	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Hominidae	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Homininae	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Homo	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Homo sapiens	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Viridiplantae	0	0	0	0	0	0	0	0	0	0	53	0	0	0	0
+Streptophyta	0	0	0	0	0	0	0	0	0	0	53	0	0	0	0
+Streptophytina	0	0	0	0	0	0	0	0	0	0	53	0	0	0	0
+Embryophyta	0	0	0	0	0	0	0	0	0	0	53	0	0	0	0
+Tracheophyta	0	0	0	0	0	0	0	0	0	0	53	0	0	0	0
+Euphyllophyta	0	0	0	0	0	0	0	0	0	0	53	0	0	0	0
+Spermatophyta	0	0	0	0	0	0	0	0	0	0	53	0	0	0	0
+Magnoliopsida	0	0	0	0	0	0	0	0	0	0	30	0	0	0	0
+Mesangiospermae	0	0	0	0	0	0	0	0	0	0	30	0	0	0	0
+Liliopsida	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+Petrosaviidae	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+commelinids	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+Zingiberales	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+Musaceae	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+Musa	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+Musa acuminata	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+eudicotyledons	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Gunneridae	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Pentapetalae	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Santalales	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Ximeniaceae	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Malania	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Malania oleifera	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Acrogymnospermae	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
+Pinopsida	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
+Pinidae	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
+Conifers II	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
+Cupressales	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
+Cupressaceae	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
+Cryptomeria	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
+Cryptomeria japonica	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0

@@ -1,0 +1,756 @@
+#Taxon	Akkermansia_muciniphila	Escherichia_coli_K12	Escherichia_coli_O157-H7	Klebsiella_pneumoniae	Mediterraneibacter_gnavus	Methanobrevibacter_smithii	Methanosphaera_stadtmanae	Ruminococcus_bromii	Salmonella_enterica_Typhimurium	Segatella_copri	all_genomes	archea	four-bact	other-bact	two-bact
+unclassified	155559	251183	302196	308156	197480	109230	111083	183070	268668	192870	2079495	220313	800167	1661702	338629
+root	132268	212973	257236	260010	157430	76077	65648	1519	226452	162263	1551876	141725	522502	1252721	133787
+cellular organisms	132268	208889	239321	255590	157406	76077	65648	1519	224655	162260	1523633	141725	520702	1224502	133787
+Bacteria	132242	208667	239138	255505	157308	17	29	1476	224560	162215	1381157	46	520493	1223803	133718
+Pseudomonadati	132058	203980	235314	252446	3	4	14	27	222657	162074	1208577	18	516816	1208556	132085
+Pseudomonadota	0	203608	235114	252078	0	4	5	5	222547	0	913361	9	222552	913352	5
+Gammaproteobacteria	0	202610	234387	250458	0	4	1	0	222194	0	909654	5	222194	909649	0
+Enterobacterales	0	200297	232020	237735	0	4	1	0	220396	0	890453	5	220396	890448	0
+Enterobacteriaceae	0	195099	226898	226334	0	0	0	0	215603	0	863934	0	215603	863934	0
+Salmonella	0	1	16	3	0	0	0	0	194987	0	195007	0	194987	195007	0
+Salmonella enterica	0	0	10	3	0	0	0	0	3574	0	3587	0	3574	3587	0
+Salmonella enterica subsp. enterica	0	0	4	0	0	0	0	0	698	0	702	0	698	702	0
+Salmonella enterica subsp. enterica serovar Typhimurium	0	0	0	0	0	0	0	0	98	0	98	0	98	98	0
+Salmonella enterica subsp. enterica serovar Typhimurium str. USDA-ARS-USMARC-1810	0	0	0	0	0	0	0	0	18	0	18	0	18	18	0
+Salmonella enterica subsp. enterica serovar Typhimurium str. DT2	0	0	0	0	0	0	0	0	4	0	4	0	4	4	0
+Salmonella enterica subsp. enterica serovar Enteritidis	0	0	0	0	0	0	0	0	59	0	59	0	59	59	0
+Salmonella enterica subsp. enterica serovar Weltevreden	0	0	0	0	0	0	0	0	17	0	17	0	17	17	0
+Salmonella enterica subsp. enterica serovar Infantis	0	0	0	0	0	0	0	0	17	0	17	0	17	17	0
+Salmonella enterica subsp. enterica serovar Infantis str. SARB27	0	0	0	0	0	0	0	0	5	0	5	0	5	5	0
+Salmonella enterica subsp. enterica serovar Derby	0	0	0	0	0	0	0	0	13	0	13	0	13	13	0
+Salmonella enterica subsp. enterica serovar Anatum	0	0	0	0	0	0	0	0	12	0	12	0	12	12	0
+Salmonella enterica subsp. enterica serovar Senftenberg	0	0	0	0	0	0	0	0	12	0	12	0	12	12	0
+Salmonella enterica subsp. enterica serovar Newport	0	0	0	0	0	0	0	0	12	0	12	0	12	12	0
+Salmonella enterica subsp. enterica serovar Newport str. USDA-ARS-USMARC-1927	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Newport str. WA_14882	0	0	0	0	0	0	0	0	5	0	5	0	5	5	0
+Salmonella enterica subsp. enterica serovar Schwarzengrund	0	0	0	0	0	0	0	0	12	0	12	0	12	12	0
+Salmonella enterica subsp. enterica serovar Kentucky	0	0	0	0	0	0	0	0	12	0	12	0	12	12	0
+Salmonella enterica subsp. enterica serovar Choleraesuis	0	0	0	0	0	0	0	0	10	0	10	0	10	10	0
+Salmonella enterica subsp. enterica serovar Choleraesuis str. SCSA50	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Mbandaka	0	0	0	0	0	0	0	0	9	0	9	0	9	9	0
+Salmonella enterica subsp. enterica serovar Mbandaka str. ATCC 51958	0	0	0	0	0	0	0	0	3	0	3	0	3	3	0
+Salmonella enterica subsp. enterica serovar 4,[5],12:i:-	0	0	0	0	0	0	0	0	8	0	8	0	8	8	0
+Salmonella enterica subsp. enterica serovar Poona	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Poona str. ATCC BAA-1673	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Muenchen	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Wandsworth	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Wandsworth str. SA20092095	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Kottbus	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Agona	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Birkenhead	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Salmonella enterica subsp. enterica serovar Napoli	0	0	0	0	0	0	0	0	6	0	6	0	6	6	0
+Salmonella enterica subsp. enterica serovar Typhi	0	0	0	0	0	0	0	0	6	0	6	0	6	6	0
+Salmonella enterica subsp. enterica serovar 1,4,[5],12:i:-	0	0	0	0	0	0	0	0	5	0	5	0	5	5	0
+Salmonella enterica subsp. enterica serovar Sloterdijk	0	0	0	0	0	0	0	0	5	0	5	0	5	5	0
+Salmonella enterica subsp. enterica serovar Sloterdijk str. ATCC 15791	0	0	0	0	0	0	0	0	5	0	5	0	5	5	0
+Salmonella enterica subsp. enterica serovar Paratyphi A	0	0	0	0	0	0	0	0	4	0	4	0	4	4	0
+Salmonella enterica subsp. enterica serovar Abaetetuba	0	0	0	0	0	0	0	0	4	0	4	0	4	4	0
+Salmonella enterica subsp. enterica serovar Abaetetuba str. ATCC 35640	0	0	0	0	0	0	0	0	4	0	4	0	4	4	0
+Salmonella enterica subsp. enterica serovar Saintpaul	0	0	0	0	0	0	0	0	3	0	3	0	3	3	0
+Salmonella enterica subsp. enterica serovar Moero	0	0	0	0	0	0	0	0	3	0	3	0	3	3	0
+Salmonella enterica subsp. enterica serovar Fresno	0	0	0	0	0	0	0	0	3	0	3	0	3	3	0
+Salmonella enterica subsp. enterica serovar Brandenburg	0	0	4	0	0	0	0	0	0	0	4	0	0	4	0
+Salmonella enterica subsp. enterica serovar Paratyphi B	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Salmonella enterica subsp. enterica serovar Dublin	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Salmonella enterica subsp. enterica serovar Dublin str. ATCC 39184	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Salmonella enterica subsp. salamae	0	0	0	0	0	0	0	0	31	0	31	0	31	31	0
+Salmonella enterica subsp. salamae serovar 55:k:z39	0	0	0	0	0	0	0	0	25	0	25	0	25	25	0
+Salmonella enterica subsp. salamae serovar 55:k:z39 str. 1315K	0	0	0	0	0	0	0	0	25	0	25	0	25	25	0
+Salmonella enterica subsp. salamae serovar 42:r:-	0	0	0	0	0	0	0	0	5	0	5	0	5	5	0
+Salmonella bongori	0	0	0	0	0	0	0	0	14	0	14	0	14	14	0
+Klebsiella/Raoultella group	0	7	5	200870	0	0	0	0	4	0	200886	0	4	200886	0
+Klebsiella	0	7	5	197280	0	0	0	0	4	0	197296	0	4	197296	0
+Klebsiella pneumoniae complex	0	7	2	5492	0	0	0	0	0	0	5501	0	0	5501	0
+Klebsiella pneumoniae	0	0	2	4260	0	0	0	0	0	0	4262	0	0	4262	0
+Klebsiella pneumoniae subsp. pneumoniae	0	0	0	174	0	0	0	0	0	0	174	0	0	174	0
+Klebsiella pneumoniae subsp. pneumoniae HS11286	0	0	0	127	0	0	0	0	0	0	127	0	0	127	0
+Klebsiella pneumoniae subsp. pneumoniae 1084	0	0	0	20	0	0	0	0	0	0	20	0	0	20	0
+Klebsiella pneumoniae MGH 39	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Klebsiella quasipneumoniae	0	0	0	59	0	0	0	0	0	0	59	0	0	59	0
+Klebsiella quasipneumoniae subsp. similipneumoniae	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Klebsiella variicola	0	7	0	22	0	0	0	0	0	0	29	0	0	29	0
+Klebsiella variicola subsp. variicola	0	0	0	14	0	0	0	0	0	0	14	0	0	14	0
+Klebsiella quasivariicola	0	0	0	11	0	0	0	0	0	0	11	0	0	11	0
+Klebsiella michiganensis	0	0	3	7	0	0	0	0	4	0	14	0	4	14	0
+unclassified Klebsiella	0	0	0	11	0	0	0	0	0	0	11	0	0	11	0
+Klebsiella sp. P1CD1	0	0	0	5	0	0	0	0	0	0	5	0	0	5	0
+Klebsiella africana	0	0	0	4	0	0	0	0	0	0	4	0	0	4	0
+Klebsiella aerogenes	0	0	0	3	0	0	0	0	0	0	3	0	0	3	0
+Escherichia	0	5309	40114	1	0	0	0	0	6	0	45430	0	6	45430	0
+Escherichia coli	0	1269	32513	1	0	0	0	0	0	0	33783	0	0	33783	0
+Escherichia coli O157:H7	0	6	124	0	0	0	0	0	0	0	130	0	0	130	0
+Escherichia coli O157:H7 str. Sakai	0	0	60	0	0	0	0	0	0	0	60	0	0	60	0
+Escherichia coli O157:H7 str. TW14588	0	0	5	0	0	0	0	0	0	0	5	0	0	5	0
+Escherichia coli O157	0	0	22	0	0	0	0	0	0	0	22	0	0	22	0
+Escherichia coli APEC IMT5155	0	6	5	0	0	0	0	0	0	0	11	0	0	11	0
+Escherichia coli O145:NM	0	0	7	0	0	0	0	0	0	0	7	0	0	7	0
+Escherichia coli O9:H10	0	6	0	0	0	0	0	0	0	0	6	0	0	6	0
+Escherichia coli O55:H7	0	0	3	0	0	0	0	0	0	0	3	0	0	3	0
+Escherichia coli O39:NM	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0
+Escherichia coli O39:NM str. F8704-2	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0
+Escherichia fergusonii	0	20	14	0	0	0	0	0	0	0	34	0	0	34	0
+Escherichia albertii	0	10	11	0	0	0	0	0	6	0	27	0	6	27	0
+Escherichia marmotae	0	7	9	0	0	0	0	0	0	0	16	0	0	16	0
+unclassified Escherichia	0	6	8	0	0	0	0	0	0	0	14	0	0	14	0
+Escherichia sp. E4742	0	6	8	0	0	0	0	0	0	0	14	0	0	14	0
+Shigella	0	41	69	0	0	0	0	0	0	0	110	0	0	110	0
+Shigella flexneri	0	17	33	0	0	0	0	0	0	0	50	0	0	50	0
+Shigella flexneri 1b	0	7	7	0	0	0	0	0	0	0	14	0	0	14	0
+Shigella flexneri 2003036	0	0	6	0	0	0	0	0	0	0	6	0	0	6	0
+Shigella dysenteriae	0	12	17	0	0	0	0	0	0	0	29	0	0	29	0
+Shigella boydii	0	6	7	0	0	0	0	0	0	0	13	0	0	13	0
+Citrobacter	0	20	15	0	0	0	0	0	6	0	41	0	6	41	0
+Citrobacter freundii complex	0	9	5	0	0	0	0	0	0	0	14	0	0	14	0
+Citrobacter werkmanii	0	3	3	0	0	0	0	0	0	0	6	0	0	6	0
+Citrobacter braakii	0	6	0	0	0	0	0	0	0	0	6	0	0	6	0
+Citrobacter sedlakii	0	0	2	0	0	0	0	0	0	0	2	0	0	2	0
+Citrobacter farmeri	0	2	5	0	0	0	0	0	0	0	7	0	0	7	0
+Citrobacter koseri	0	0	0	0	0	0	0	0	4	0	4	0	4	4	0
+unclassified Citrobacter	0	2	0	0	0	0	0	0	0	0	2	0	0	2	0
+Citrobacter sp. R56	0	2	0	0	0	0	0	0	0	0	2	0	0	2	0
+Citrobacter rodentium	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0
+Kosakonia	0	0	6	5	0	0	0	0	7	0	18	0	7	18	0
+Kosakonia radicincitans	0	0	6	5	0	0	0	0	5	0	16	0	5	16	0
+unclassified Kosakonia	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Kosakonia sp. SMBL-WEM22	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Enterobacter	0	1	5	1	0	0	0	0	8	0	15	0	8	15	0
+Enterobacter cloacae complex	0	0	5	0	0	0	0	0	2	0	7	0	2	7	0
+Enterobacter roggenkampii	0	0	5	0	0	0	0	0	0	0	5	0	0	5	0
+Enterobacter kobei	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Scandinavium	0	5	3	5	0	0	0	0	0	0	13	0	0	13	0
+Scandinavium goeteborgense	0	5	3	5	0	0	0	0	0	0	13	0	0	13	0
+Cedecea	0	0	0	0	0	0	0	0	7	0	7	0	7	7	0
+Yokenella	0	1	0	0	0	0	0	0	5	0	6	0	5	6	0
+Yokenella regensburgei	0	1	0	0	0	0	0	0	5	0	6	0	5	6	0
+Leclercia	0	0	0	0	0	0	0	0	2	0	2	0	2	2	0
+Leclercia adecarboxylata	0	0	0	0	0	0	0	0	1	0	1	0	1	1	0
+Siccibacter	0	0	0	0	0	0	0	0	1	0	1	0	1	1	0
+Siccibacter turicensis	0	0	0	0	0	0	0	0	1	0	1	0	1	1	0
+Erwiniaceae	0	8	6	5	0	0	0	0	0	0	19	0	0	19	0
+Pantoea	0	2	1	5	0	0	0	0	0	0	8	0	0	8	0
+unclassified Pantoea	0	2	1	0	0	0	0	0	0	0	3	0	0	3	0
+Yersiniaceae	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Serratia	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Pectobacteriaceae	0	1	1	0	0	4	0	0	0	0	6	4	0	2	0
+Lonsdalea	0	1	1	0	0	0	0	0	0	0	2	0	0	2	0
+Lonsdalea britannica	0	1	1	0	0	0	0	0	0	0	2	0	0	2	0
+Hafniaceae	0	0	0	3	0	0	0	0	0	0	3	0	0	3	0
+Edwardsiella	0	0	0	3	0	0	0	0	0	0	3	0	0	3	0
+Edwardsiella tarda	0	0	0	3	0	0	0	0	0	0	3	0	0	3	0
+Morganellaceae	0	0	0	0	0	0	1	0	1	0	2	1	1	1	0
+Providencia	0	0	0	0	0	0	1	0	1	0	2	1	1	1	0
+Providencia heimbachae	0	0	0	0	0	0	0	0	1	0	1	0	1	1	0
+Pseudomonadales	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Pseudomonadaceae	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Pseudomonas	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Pseudomonas saudiphocaensis	0	0	0	7	0	0	0	0	0	0	7	0	0	7	0
+Moraxellales	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Moraxellaceae	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Faucicola	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Faucicola mancuniensis	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Vibrionales	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Vibrionaceae	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Alphaproteobacteria	0	0	0	0	0	0	4	4	0	0	8	4	4	4	4
+Emcibacterales	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Emcibacteraceae	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Pseudemcibacter	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Pseudemcibacter aquimaris	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Rickettsiales	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Rickettsiaceae	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Rickettsieae	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Candidatus Tisiphia	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+unclassified Candidatus Tisiphia	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Betaproteobacteria	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Burkholderiales	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Comamonadaceae	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Limnohabitans	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+unclassified Limnohabitans	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Limnohabitans sp. 103DPR2	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+PVC group	131783	0	0	0	0	0	0	0	0	0	131783	0	131783	131783	131783
+Verrucomicrobiota	131768	0	0	0	0	0	0	0	0	0	131768	0	131768	131768	131768
+Verrucomicrobiia	131736	0	0	0	0	0	0	0	0	0	131736	0	131736	131736	131736
+Verrucomicrobiales	131736	0	0	0	0	0	0	0	0	0	131736	0	131736	131736	131736
+Akkermansiaceae	131681	0	0	0	0	0	0	0	0	0	131681	0	131681	131681	131681
+Akkermansia	131681	0	0	0	0	0	0	0	0	0	131681	0	131681	131681	131681
+Akkermansia muciniphila	127031	0	0	0	0	0	0	0	0	0	127031	0	127031	127031	127031
+unclassified Akkermansia	3	0	0	0	0	0	0	0	0	0	3	0	3	3	3
+Akkermansia sp. BCRC 18949	2	0	0	0	0	0	0	0	0	0	2	0	2	2	2
+Akkermansia sp. JRP_AM1	1	0	0	0	0	0	0	0	0	0	1	0	1	1	1
+FCB group	1	0	0	0	0	0	8	9	0	162038	162056	8	162048	162048	10
+Bacteroidota/Chlorobiota group	1	0	0	0	0	0	8	9	0	162038	162056	8	162048	162048	10
+Bacteroidota	1	0	0	0	0	0	6	9	0	162038	162054	6	162048	162048	10
+Bacteroidia	0	0	0	0	0	0	1	1	0	161620	161622	1	161621	161621	1
+Bacteroidales	0	0	0	0	0	0	1	1	0	161620	161622	1	161621	161621	1
+Prevotellaceae	0	0	0	0	0	0	0	1	0	161147	161148	0	161148	161148	1
+Segatella	0	0	0	0	0	0	0	0	0	160431	160431	0	160431	160431	0
+Segatella copri	0	0	0	0	0	0	0	0	0	156624	156624	0	156624	156624	0
+Segatella copri DSM 18205	0	0	0	0	0	0	0	0	0	65050	65050	0	65050	65050	0
+Prevotella	0	0	0	0	0	0	0	1	0	1	2	0	2	2	1
+Prevotella melaninogenica	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Prevotella corporis	0	0	0	0	0	0	0	0	0	1	1	0	1	1	0
+Bacteroidaceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Phocaeicola	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Phocaeicola vulgatus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Sphingobacteriia	1	0	0	0	0	0	0	2	0	10	13	0	13	13	3
+Sphingobacteriales	1	0	0	0	0	0	0	2	0	10	13	0	13	13	3
+Sphingobacteriaceae	1	0	0	0	0	0	0	2	0	10	13	0	13	13	3
+Olivibacter	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+unclassified Olivibacter	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Olivibacter sp. LS-1	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Sphingobacterium	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Pedobacter	1	0	0	0	0	0	0	0	0	0	1	0	1	1	1
+unclassified Pedobacter	1	0	0	0	0	0	0	0	0	0	1	0	1	1	1
+Pedobacter sp. G11	1	0	0	0	0	0	0	0	0	0	1	0	1	1	1
+Flavobacteriia	0	0	0	0	0	0	5	6	0	0	11	5	6	6	6
+Flavobacteriales	0	0	0	0	0	0	5	6	0	0	11	5	6	6	6
+Flavobacteriaceae	0	0	0	0	0	0	4	6	0	0	10	4	6	6	6
+Capnocytophaga	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Polaribacter	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Polaribacter staleyi	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Psychroserpens	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+unclassified Psychroserpens	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Psychroserpens sp. NJDZ02	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Weeksellaceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Cloacibacterium	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Cloacibacterium normanense	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Ignavibacteriota	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Ignavibacteria	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Ignavibacteriales	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Ignavibacteriaceae	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Ignavibacterium	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+unclassified Ignavibacterium	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Ignavibacterium sp.	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Aquificota	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Aquificia	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Aquificales	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Aquificaceae	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Thermocrinis	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Thermocrinis albus	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Thermocrinis albus DSM 14484	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Spirochaetota	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Spirochaetia	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Leptospirales	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Leptospiraceae	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Leptospira	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Leptospira kmetyi	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Spirochaetales	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Treponemataceae	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Treponema	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Treponema peruense	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Bdellovibrionota	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrionia	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrionales	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Pseudobdellovibrionaceae	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrio	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrio bacteriovorus	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Bdellovibrio bacteriovorus str. Tiberius	0	5	5	0	0	0	0	0	0	0	10	0	0	10	0
+Campylobacterota	0	0	0	0	3	0	1	0	0	0	4	1	0	0	0
+Epsilonproteobacteria	0	0	0	0	3	0	1	0	0	0	4	1	0	0	0
+Campylobacterales	0	0	0	0	3	0	1	0	0	0	4	1	0	0	0
+Sulfurimonadaceae	0	0	0	0	3	0	0	0	0	0	3	0	0	0	0
+Sulfurimonas	0	0	0	0	3	0	0	0	0	0	3	0	0	0	0
+Sulfurimonas marina	0	0	0	0	3	0	0	0	0	0	3	0	0	0	0
+Campylobacteraceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Campylobacter	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Campylobacter armoricus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Bacillati	0	0	0	0	156564	7	14	1365	0	5	157955	21	1370	1370	1365
+Bacillota	0	0	0	0	155844	6	12	1338	0	0	157200	18	1338	1338	1338
+Clostridia	0	0	0	0	153498	3	3	1171	0	0	154675	6	1171	1171	1171
+Lachnospirales	0	0	0	0	149475	0	0	273	0	0	149748	0	273	273	273
+Lachnospiraceae	0	0	0	0	149457	0	0	271	0	0	149728	0	271	271	271
+Mediterraneibacter	0	0	0	0	138697	0	0	13	0	0	138710	0	13	13	13
+Mediterraneibacter gnavus	0	0	0	0	138096	0	0	9	0	0	138105	0	9	9	9
+Mediterraneibacter gnavus ATCC 29149	0	0	0	0	33	0	0	0	0	0	33	0	0	0	0
+[Ruminococcus] lactaris	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+[Ruminococcus] lactaris ATCC 29176	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Mediterraneibacter glycyrrhizinilyticus	0	0	0	0	7	0	0	0	0	0	7	0	0	0	0
+[Ruminococcus] torques	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Coprococcus	0	0	0	0	0	0	0	99	0	0	99	0	99	99	99
+Coprococcus eutactus	0	0	0	0	0	0	0	35	0	0	35	0	35	35	35
+unclassified Coprococcus	0	0	0	0	0	0	0	21	0	0	21	0	21	21	21
+Coprococcus sp. ART55/1	0	0	0	0	0	0	0	21	0	0	21	0	21	21	21
+Coprococcus catus	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Anaerobutyricum	0	0	0	0	0	0	0	33	0	0	33	0	33	33	33
+Anaerobutyricum hallii	0	0	0	0	0	0	0	26	0	0	26	0	26	26	26
+Roseburia	0	0	0	0	0	0	0	28	0	0	28	0	28	28	28
+Roseburia hominis	0	0	0	0	0	0	0	21	0	0	21	0	21	21	21
+Roseburia faecis	0	0	0	0	0	0	0	7	0	0	7	0	7	7	7
+Eshraghiella	0	0	0	0	0	0	0	26	0	0	26	0	26	26	26
+Eshraghiella crossota	0	0	0	0	0	0	0	26	0	0	26	0	26	26	26
+Blautia	0	0	0	0	29	0	0	13	0	0	42	0	13	13	13
+Blautia obeum	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Blautia obeum A2-162	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Blautia wexlerae	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Blautia massiliensis (ex Durand et al. 2017)	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Dorea	0	0	0	0	12	0	0	11	0	0	23	0	11	11	11
+Dorea formicigenerans	0	0	0	0	0	0	0	11	0	0	11	0	11	11	11
+Dorea longicatena	0	0	0	0	12	0	0	0	0	0	12	0	0	0	0
+Butyrivibrio	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Anaerostipes	0	0	0	0	7	0	0	0	0	0	7	0	0	0	0
+Anaerostipes caccae	0	0	0	0	7	0	0	0	0	0	7	0	0	0	0
+Otoolea	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+[Clostridium] symbiosum	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Vallitaleaceae	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Vallitalea	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Vallitalea pronyensis	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Eubacteriales	0	0	0	0	0	3	3	770	0	0	776	6	770	770	770
+Oscillospiraceae	0	0	0	0	0	0	0	721	0	0	721	0	721	721	721
+Ruminococcus	0	0	0	0	0	0	0	694	0	0	694	0	694	694	694
+unclassified Ruminococcus	0	0	0	0	0	0	0	637	0	0	637	0	637	637	637
+Ruminococcus sp. JL13D9	0	0	0	0	0	0	0	45	0	0	45	0	45	45	45
+Ruminococcus sp. JE7B6	0	0	0	0	0	0	0	13	0	0	13	0	13	13	13
+Ruminococcus bovis	0	0	0	0	0	0	0	19	0	0	19	0	19	19	19
+Ruminococcus bicirculans (ex Wegman et al. 2014)	0	0	0	0	0	0	0	15	0	0	15	0	15	15	15
+Ruminococcus gauvreauii	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Ruminococcus albus	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Ruminococcus albus 7 = DSM 20455	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Oscillibacter	0	0	0	0	0	0	0	10	0	0	10	0	10	10	10
+unclassified Oscillibacter	0	0	0	0	0	0	0	10	0	0	10	0	10	10	10
+Oscillibacter sp. PEA192	0	0	0	0	0	0	0	10	0	0	10	0	10	10	10
+Faecalibacterium	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Ruminiclostridium	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Ruminiclostridium cellulolyticum	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Ruminiclostridium cellulolyticum H10	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Clostridiaceae	0	0	0	0	0	1	3	16	0	0	20	4	16	16	16
+Clostridium	0	0	0	0	0	1	3	16	0	0	20	4	16	16	16
+Clostridium thermosuccinogenes	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+unclassified Clostridium	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Clostridium sp. SY8519	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Clostridium botulinum	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Clostridium tagluense	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Clostridium pasteurianum	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Clostridium pasteurianum BC1	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Eubacteriaceae	0	0	0	0	0	0	0	12	0	0	12	0	12	12	12
+Eubacterium	0	0	0	0	0	0	0	12	0	0	12	0	12	12	12
+Eubacterium callanderi	0	0	0	0	0	0	0	12	0	0	12	0	12	12	12
+Eubacteriales incertae sedis	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Fenollaria	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Fenollaria massiliensis	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Syntrophomonadaceae	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Candidatus Syntrophocurvum	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Candidatus Syntrophocurvum alkaliphilum	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Peptostreptococcales	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Peptostreptococcaceae	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Terrisporobacter	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Terrisporobacter hibernicus	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Bacilli	0	0	0	0	0	2	9	38	0	0	49	11	38	38	38
+Bacillales	0	0	0	0	0	2	9	19	0	0	30	11	19	19	19
+Paenibacillaceae	0	0	0	0	0	0	4	9	0	0	13	4	9	9	9
+Paenibacillus	0	0	0	0	0	0	4	9	0	0	13	4	9	9	9
+Paenibacillus jilunlii	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+unclassified Paenibacillus	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Paenibacillus sp. SN-8-1	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Bacillaceae	0	0	0	0	0	2	5	6	0	0	13	7	6	6	6
+Bacillus	0	0	0	0	0	0	5	0	0	0	5	5	0	0	0
+Bacillus cereus group	0	0	0	0	0	0	5	0	0	0	5	5	0	0	0
+Bacillus thuringiensis	0	0	0	0	0	0	5	0	0	0	5	5	0	0	0
+Lentibacillus	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+unclassified Lentibacillus	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Lentibacillus sp. CBA3610	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Alkalihalobacillus	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+unclassified Alkalihalobacillus	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Alkalihalobacillus sp. LMS39	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Lactobacillales	0	0	0	0	0	0	0	13	0	0	13	0	13	13	13
+Enterococcaceae	0	0	0	0	0	0	0	7	0	0	7	0	7	7	7
+Enterococcus	0	0	0	0	0	0	0	7	0	0	7	0	7	7	7
+Lactobacillaceae	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Lacticaseibacillus	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Lacticaseibacillus rhamnosus	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Ligilactobacillus	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Ligilactobacillus acidipiscis	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Companilactobacillus	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Companilactobacillus ginsenosidimutans	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Tissierellia	0	0	0	0	0	1	0	7	0	0	8	1	7	7	7
+Tissierellales	0	0	0	0	0	1	0	7	0	0	8	1	7	7	7
+Peptoniphilaceae	0	0	0	0	0	1	0	7	0	0	8	1	7	7	7
+Anaerococcus	0	0	0	0	0	1	0	7	0	0	8	1	7	7	7
+Anaerococcus vaginalis	0	0	0	0	0	0	0	7	0	0	7	0	7	7	7
+unclassified Anaerococcus	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Anaerococcus sp. WGS1579	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Bacillota incertae sedis	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Caldicellulosiruptorales	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Caldicellulosiruptoraceae	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Caldicellulosiruptor	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Caldicellulosiruptor owensensis	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Caldicellulosiruptor owensensis OL	0	0	0	0	0	0	0	6	0	0	6	0	6	6	6
+Erysipelotrichia	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Erysipelotrichales	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Erysipelotrichaceae	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Amedibacillus	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+[Eubacterium] hominis	0	0	0	0	0	0	0	4	0	0	4	0	4	4	4
+Actinomycetota	0	0	0	0	0	1	0	2	0	5	8	1	7	7	2
+Actinomycetes	0	0	0	0	0	1	0	2	0	5	8	1	7	7	2
+Micrococcales	0	0	0	0	0	1	0	0	0	5	6	1	5	5	0
+Micrococcaceae	0	0	0	0	0	0	0	0	0	5	5	0	5	5	0
+Arthrobacter	0	0	0	0	0	0	0	0	0	5	5	0	5	5	0
+Microbacteriaceae	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Leifsonia	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+unclassified Leifsonia	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Leifsonia sp. P73	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Actinomycetales	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Actinomycetaceae	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Schaalia	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Schaalia radingae	0	0	0	0	0	0	0	2	0	0	2	0	2	2	2
+Cyanobacteriota/Melainabacteria group	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Cyanobacteriota	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Cyanophyceae	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Nostocales	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Nostocaceae	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Anabaena	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+unclassified Anabaena	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Anabaena sp. WA102	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Mycoplasmatota	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Mollicutes	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Entomoplasmatales	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Spiroplasmataceae	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Spiroplasma	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Spiroplasma culicicola	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Spiroplasma culicicola AES-1	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Fusobacteriati	0	0	0	0	0	4	0	6	0	0	10	4	6	6	6
+Fusobacteriota	0	0	0	0	0	4	0	6	0	0	10	4	6	6	6
+Fusobacteriia	0	0	0	0	0	4	0	6	0	0	10	4	6	6	6
+Fusobacteriales	0	0	0	0	0	4	0	6	0	0	10	4	6	6	6
+Fusobacteriaceae	0	0	0	0	0	4	0	6	0	0	10	4	6	6	6
+Fusobacterium	0	0	0	0	0	4	0	6	0	0	10	4	6	6	6
+Fusobacterium pseudoperiodonticum	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Thermotogati	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Thermotogota	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Thermotogae	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Petrotogales	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Petrotogaceae	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Marinitoga	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Marinitoga aeolica	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Archaea	0	0	0	0	0	75911	65453	0	0	0	141364	141364	0	0	0
+Methanobacteriati	0	0	0	0	0	75908	65428	0	0	0	141336	141336	0	0	0
+Methanobacteriota	0	0	0	0	0	75908	65427	0	0	0	141335	141335	0	0	0
+Methanomada group	0	0	0	0	0	75902	65426	0	0	0	141328	141328	0	0	0
+Methanobacteria	0	0	0	0	0	75902	65426	0	0	0	141328	141328	0	0	0
+Methanobacteriales	0	0	0	0	0	75902	65426	0	0	0	141328	141328	0	0	0
+Methanobacteriaceae	0	0	0	0	0	75902	65426	0	0	0	141328	141328	0	0	0
+Methanobrevibacter	0	0	0	0	0	75793	0	0	0	0	75793	75793	0	0	0
+Methanobrevibacter smithii	0	0	0	0	0	58959	0	0	0	0	58959	58959	0	0	0
+Methanobrevibacter smithii ATCC 35061	0	0	0	0	0	17701	0	0	0	0	17701	17701	0	0	0
+Methanobrevibacter intestini	0	0	0	0	0	65	0	0	0	0	65	65	0	0	0
+unclassified Methanobrevibacter	0	0	0	0	0	26	0	0	0	0	26	26	0	0	0
+Methanobrevibacter sp. TLL-48-HuF1	0	0	0	0	0	23	0	0	0	0	23	23	0	0	0
+Methanobrevibacter sp. YE315	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Methanobrevibacter acididurans	0	0	0	0	0	10	0	0	0	0	10	10	0	0	0
+Methanosphaera	0	0	0	0	0	4	65210	0	0	0	65214	65214	0	0	0
+Methanosphaera stadtmanae	0	0	0	0	0	0	64777	0	0	0	64777	64777	0	0	0
+unclassified Methanosphaera	0	0	0	0	0	4	8	0	0	0	12	12	0	0	0
+Methanosphaera sp. BMS	0	0	0	0	0	4	8	0	0	0	12	12	0	0	0
+Thermoproteati	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Thermoproteota	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Thermoprotei	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Sulfolobales	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Sulfolobaceae	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Acidianus	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Acidianus manzaensis	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Eukaryota	2	1	14	1	30	88	75	32	0	25	268	163	59	75	34
+Viridiplantae	0	1	10	1	30	72	56	32	0	8	210	128	40	52	32
+Streptophyta	0	1	10	1	30	72	56	32	0	8	210	128	40	52	32
+Streptophytina	0	1	10	1	30	72	56	32	0	8	210	128	40	52	32
+Embryophyta	0	1	10	1	30	72	56	32	0	8	210	128	40	52	32
+Tracheophyta	0	1	10	1	30	72	56	32	0	8	210	128	40	52	32
+Euphyllophyta	0	1	10	1	30	72	56	32	0	8	210	128	40	52	32
+Spermatophyta	0	1	10	1	30	72	56	32	0	8	210	128	40	52	32
+Magnoliopsida	0	1	10	1	26	70	48	25	0	4	185	118	29	41	25
+Mesangiospermae	0	1	10	1	26	70	48	25	0	4	185	118	29	41	25
+eudicotyledons	0	1	10	0	17	59	41	12	0	4	144	100	16	27	12
+Gunneridae	0	1	10	0	17	59	41	12	0	4	144	100	16	27	12
+Pentapetalae	0	1	10	0	17	59	41	12	0	4	144	100	16	27	12
+rosids	0	1	3	0	2	31	28	12	0	0	77	59	12	16	12
+fabids	0	1	3	0	2	30	11	12	0	0	59	41	12	16	12
+Fagales	0	0	0	0	0	10	5	0	0	0	15	15	0	0	0
+Juglandaceae	0	0	0	0	0	6	5	0	0	0	11	11	0	0	0
+Carya	0	0	0	0	0	6	0	0	0	0	6	6	0	0	0
+Carya illinoinensis	0	0	0	0	0	6	0	0	0	0	6	6	0	0	0
+Juglans	0	0	0	0	0	0	5	0	0	0	5	5	0	0	0
+Juglans microcarpa x Juglans regia	0	0	0	0	0	0	5	0	0	0	5	5	0	0	0
+Fagaceae	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Castanea	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Castanea sativa	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Quercus	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Fabales	0	0	0	0	0	9	4	1	0	0	14	13	1	1	1
+Fabaceae	0	0	0	0	0	9	4	1	0	0	14	13	1	1	1
+Papilionoideae	0	0	0	0	0	9	4	1	0	0	14	13	1	1	1
+50 kb inversion clade	0	0	0	0	0	9	4	1	0	0	14	13	1	1	1
+NPAAA clade	0	0	0	0	0	3	4	1	0	0	8	7	1	1	1
+indigoferoid/millettioid clade	0	0	0	0	0	1	3	1	0	0	5	4	1	1	1
+Phaseoleae	0	0	0	0	0	1	3	1	0	0	5	4	1	1	1
+Glycine	0	0	0	0	0	1	0	1	0	0	2	1	1	1	1
+Glycine subgen. Soja	0	0	0	0	0	1	0	1	0	0	2	1	1	1	1
+Glycine soja	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Cajanus	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Cajanus cajan	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Vigna	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Vigna radiata	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Vigna radiata var. radiata	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Hologalegina	0	0	0	0	0	2	1	0	0	0	3	3	0	0	0
+IRL clade	0	0	0	0	0	2	1	0	0	0	3	3	0	0	0
+Fabeae	0	0	0	0	0	2	1	0	0	0	3	3	0	0	0
+Vicia	0	0	0	0	0	2	1	0	0	0	3	3	0	0	0
+Vicia villosa	0	0	0	0	0	2	1	0	0	0	3	3	0	0	0
+genistoids sensu lato	0	0	0	0	0	5	0	0	0	0	5	5	0	0	0
+core genistoids	0	0	0	0	0	5	0	0	0	0	5	5	0	0	0
+Genisteae	0	0	0	0	0	5	0	0	0	0	5	5	0	0	0
+Lupinus	0	0	0	0	0	5	0	0	0	0	5	5	0	0	0
+Lupinus angustifolius	0	0	0	0	0	5	0	0	0	0	5	5	0	0	0
+Rosales	0	0	0	0	0	3	2	5	0	0	10	5	5	5	5
+Rosaceae	0	0	0	0	0	1	2	5	0	0	8	3	5	5	5
+Rosoideae	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Potentilleae	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Potentilleae incertae sedis	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Argentina	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Argentina anserina	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Amygdaloideae	0	0	0	0	0	1	2	0	0	0	3	3	0	0	0
+Maleae	0	0	0	0	0	1	2	0	0	0	3	3	0	0	0
+Pyrus	0	0	0	0	0	1	2	0	0	0	3	3	0	0	0
+Pyrus communis	0	0	0	0	0	1	2	0	0	0	3	3	0	0	0
+Cannabaceae	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Cannabis	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Cannabis sativa	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Malpighiales	0	1	3	0	2	4	0	0	0	0	10	4	0	4	0
+Euphorbiaceae	0	1	3	0	0	4	0	0	0	0	8	4	0	4	0
+Crotonoideae	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Micrandreae	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Hevea	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Hevea brasiliensis	0	0	0	0	0	4	0	0	0	0	4	4	0	0	0
+Euphorbioideae	0	1	3	0	0	0	0	0	0	0	4	0	0	4	0
+Euphorbieae	0	1	3	0	0	0	0	0	0	0	4	0	0	4	0
+Euphorbia	0	1	3	0	0	0	0	0	0	0	4	0	0	4	0
+Euphorbia subgen. Esula	0	1	3	0	0	0	0	0	0	0	4	0	0	4	0
+Euphorbia sect. Lathyris	0	1	3	0	0	0	0	0	0	0	4	0	0	4	0
+Euphorbia lathyris	0	1	3	0	0	0	0	0	0	0	4	0	0	4	0
+Salicaceae	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Saliceae	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Populus	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Populus nigra	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Cucurbitales	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Cucurbitaceae	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Benincaseae	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Cucumis	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+Cucumis melo	0	0	0	0	0	0	0	1	0	0	1	0	1	1	1
+malvids	0	0	0	0	0	1	13	0	0	0	14	14	0	0	0
+Malvales	0	0	0	0	0	1	10	0	0	0	11	11	0	0	0
+Malvaceae	0	0	0	0	0	1	10	0	0	0	11	11	0	0	0
+Malvoideae	0	0	0	0	0	1	7	0	0	0	8	8	0	0	0
+Gossypium	0	0	0	0	0	1	7	0	0	0	8	8	0	0	0
+Gossypium raimondii	0	0	0	0	0	0	7	0	0	0	7	7	0	0	0
+Byttnerioideae	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Theobroma	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Theobroma cacao	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Sapindales	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Rutaceae	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Aurantioideae	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Citrus	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Citrus sinensis	0	0	0	0	0	0	2	0	0	0	2	2	0	0	0
+Brassicales	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Brassicaceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Brassiceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Raphanus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Raphanus sativus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+asterids	0	0	7	0	11	18	11	0	0	4	51	29	4	11	0
+lamiids	0	0	7	0	8	15	1	0	0	1	32	16	1	8	0
+Solanales	0	0	7	0	4	6	1	0	0	1	19	7	1	8	0
+Solanaceae	0	0	7	0	4	6	1	0	0	1	19	7	1	8	0
+Solanoideae	0	0	0	0	4	6	1	0	0	0	11	7	0	0	0
+Solaneae	0	0	0	0	4	3	1	0	0	0	8	4	0	0	0
+Solanum	0	0	0	0	4	3	1	0	0	0	8	4	0	0	0
+Solanum subgen. Lycopersicon	0	0	0	0	4	2	1	0	0	0	7	3	0	0	0
+Solanum lycopersicum	0	0	0	0	4	0	1	0	0	0	5	1	0	0	0
+Solanum pennellii	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Solanum stenotomum	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Capsiceae	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Capsicum	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Capsicum annuum	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Nicotianoideae	0	0	7	0	0	0	0	0	0	1	8	0	1	8	0
+Nicotianeae	0	0	7	0	0	0	0	0	0	1	8	0	1	8	0
+Nicotiana	0	0	7	0	0	0	0	0	0	1	8	0	1	8	0
+Lamiales	0	0	0	0	4	9	0	0	0	0	13	9	0	0	0
+Pedaliaceae	0	0	0	0	0	6	0	0	0	0	6	6	0	0	0
+Sesamum	0	0	0	0	0	6	0	0	0	0	6	6	0	0	0
+Sesamum indicum	0	0	0	0	0	6	0	0	0	0	6	6	0	0	0
+Lamiaceae	0	0	0	0	4	3	0	0	0	0	7	3	0	0	0
+Nepetoideae	0	0	0	0	4	3	0	0	0	0	7	3	0	0	0
+Mentheae	0	0	0	0	4	3	0	0	0	0	7	3	0	0	0
+Salviinae	0	0	0	0	4	3	0	0	0	0	7	3	0	0	0
+Salvia	0	0	0	0	4	3	0	0	0	0	7	3	0	0	0
+Salvia incertae sedis	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Salvia hispanica	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Salvia subgen. Calosphace	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+core Calosphace	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Salvia splendens	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+campanulids	0	0	0	0	3	3	9	0	0	3	18	12	3	3	0
+Asterales	0	0	0	0	3	0	7	0	0	3	13	7	3	3	0
+Asteraceae	0	0	0	0	3	0	7	0	0	3	13	7	3	3	0
+Asteroideae	0	0	0	0	1	0	4	0	0	3	8	4	3	3	0
+Heliantheae alliance	0	0	0	0	0	0	4	0	0	3	7	4	3	3	0
+Heliantheae	0	0	0	0	0	0	4	0	0	3	7	4	3	3	0
+Helianthus	0	0	0	0	0	0	4	0	0	3	7	4	3	3	0
+Helianthus annuus	0	0	0	0	0	0	4	0	0	3	7	4	3	3	0
+Inuleae	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Plucheinae	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Rutidosis	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Rutidosis leptorrhynchoides	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Carduoideae	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Cardueae	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Carduinae	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Cynara	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Cynara cardunculus	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Cynara cardunculus subsp. cardunculus	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Cynara cardunculus var. scolymus	0	0	0	0	0	0	3	0	0	0	3	3	0	0	0
+Cichorioideae	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Cichorieae	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Lactucinae	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Lactuca	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Lactuca sativa	0	0	0	0	2	0	0	0	0	0	2	0	0	0	0
+Apiales	0	0	0	0	0	3	2	0	0	0	5	5	0	0	0
+Apiineae	0	0	0	0	0	3	2	0	0	0	5	5	0	0	0
+Apiaceae	0	0	0	0	0	3	2	0	0	0	5	5	0	0	0
+Apioideae	0	0	0	0	0	3	2	0	0	0	5	5	0	0	0
+apioid superclade	0	0	0	0	0	3	1	0	0	0	4	4	0	0	0
+Apieae	0	0	0	0	0	3	1	0	0	0	4	4	0	0	0
+Apium	0	0	0	0	0	3	1	0	0	0	4	4	0	0	0
+Apium graveolens	0	0	0	0	0	3	1	0	0	0	4	4	0	0	0
+Scandiceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Daucinae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Daucus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Daucus sect. Daucus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Daucus carota	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Daucus carota subsp. sativus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Ericales	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Balsaminaceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Impatiens	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Impatiens glandulifera	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Santalales	0	0	0	0	4	7	0	0	0	0	11	7	0	0	0
+Ximeniaceae	0	0	0	0	4	7	0	0	0	0	11	7	0	0	0
+Malania	0	0	0	0	4	7	0	0	0	0	11	7	0	0	0
+Malania oleifera	0	0	0	0	4	7	0	0	0	0	11	7	0	0	0
+Caryophyllales	0	0	0	0	0	3	2	0	0	0	5	5	0	0	0
+Chenopodiaceae	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Betoideae	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Beta	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Beta vulgaris	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Beta vulgaris subsp. vulgaris	0	0	0	0	0	3	0	0	0	0	3	3	0	0	0
+Caryophyllaceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Sileneae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Silene	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Silene subgen. Behenantha	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Silene sect. Melandrium	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Silene latifolia	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Amaranthaceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Amaranthus	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Amaranthus tricolor	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Liliopsida	0	0	0	0	9	8	4	13	0	0	34	12	13	13	13
+Petrosaviidae	0	0	0	0	9	8	4	13	0	0	34	12	13	13	13
+commelinids	0	0	0	0	9	8	4	13	0	0	34	12	13	13	13
+Poales	0	0	0	0	5	0	2	10	0	0	17	2	10	10	10
+Poaceae	0	0	0	0	5	0	2	10	0	0	17	2	10	10	10
+BOP clade	0	0	0	0	4	0	2	5	0	0	11	2	5	5	5
+Pooideae	0	0	0	0	0	0	2	5	0	0	7	2	5	5	5
+Triticodae	0	0	0	0	0	0	2	5	0	0	7	2	5	5	5
+Triticeae	0	0	0	0	0	0	2	5	0	0	7	2	5	5	5
+Triticinae	0	0	0	0	0	0	2	5	0	0	7	2	5	5	5
+Triticum	0	0	0	0	0	0	2	5	0	0	7	2	5	5	5
+Oryzoideae	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Oryzeae	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Oryzinae	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Oryza	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+Oryza glaberrima	0	0	0	0	4	0	0	0	0	0	4	0	0	0	0
+PACMAD clade	0	0	0	0	1	0	0	5	0	0	6	0	5	5	5
+Panicoideae	0	0	0	0	1	0	0	5	0	0	6	0	5	5	5
+Panicodae	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Paniceae	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Panicinae	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Panicum	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Panicum sect. Hiantes	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Panicum virgatum	0	0	0	0	0	0	0	5	0	0	5	0	5	5	5
+Andropogonodae	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Andropogoneae	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Sorghinae	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Sorghum	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Sorghum bicolor	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0
+Zingiberales	0	0	0	0	4	6	2	0	0	0	12	8	0	0	0
+Musaceae	0	0	0	0	4	6	1	0	0	0	11	7	0	0	0
+Musa	0	0	0	0	4	6	1	0	0	0	11	7	0	0	0
+Musa acuminata	0	0	0	0	4	6	1	0	0	0	11	7	0	0	0
+Musa acuminata AAA Group	0	0	0	0	4	6	1	0	0	0	11	7	0	0	0
+Zingiberaceae	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Curcuma	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Curcuma longa	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Arecales	0	0	0	0	0	2	0	3	0	0	5	2	3	3	3
+Arecaceae	0	0	0	0	0	2	0	3	0	0	5	2	3	3	3
+Arecoideae	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Cocoseae	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Elaeidinae	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Elaeis	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Elaeis guineensis	0	0	0	0	0	0	0	3	0	0	3	0	3	3	3
+Coryphoideae	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Phoeniceae	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Phoenix	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Phoenix dactylifera	0	0	0	0	0	2	0	0	0	0	2	2	0	0	0
+Ranunculales	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Papaveraceae	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Papaveroideae	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Papaver	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Papaver somniferum	0	0	0	1	0	0	0	0	0	0	1	0	0	1	0
+Acrogymnospermae	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Pinopsida	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Pinidae	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Conifers II	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Cupressales	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Cupressaceae	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Cryptomeria	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Cryptomeria japonica	0	0	0	0	4	2	2	0	0	4	12	4	4	4	0
+Opisthokonta	0	0	4	0	0	15	11	0	0	17	47	26	17	21	0
+Metazoa	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Eumetazoa	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Bilateria	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Deuterostomia	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Chordata	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Craniata	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Vertebrata	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Gnathostomata	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Teleostomi	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Euteleostomi	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Sarcopterygii	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Dipnotetrapodomorpha	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Tetrapoda	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Amniota	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Mammalia	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Theria	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Eutheria	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Boreoeutheria	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Euarchontoglires	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Primates	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Haplorrhini	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Simiiformes	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Catarrhini	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Hominoidea	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Hominidae	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Homininae	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Homo	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Homo sapiens	0	0	4	0	0	15	7	0	0	17	43	22	17	21	0
+Fungi	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Fungi incertae sedis	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Mucoromycota	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Glomeromycotina	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Glomeromycetes	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Glomerales	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Glomeraceae	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Rhizophagus	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Rhizophagus irregularis	0	0	0	0	0	0	4	0	0	0	4	4	0	0	0
+Sar	0	0	0	0	0	1	1	0	0	0	2	2	0	0	0
+Alveolata	0	0	0	0	0	1	1	0	0	0	2	2	0	0	0
+Apicomplexa	0	0	0	0	0	1	1	0	0	0	2	2	0	0	0
+Aconoidasida	0	0	0	0	0	1	1	0	0	0	2	2	0	0	0
+Haemosporida	0	0	0	0	0	1	1	0	0	0	2	2	0	0	0
+Plasmodiidae	0	0	0	0	0	1	1	0	0	0	2	2	0	0	0
+Plasmodium	0	0	0	0	0	1	1	0	0	0	2	2	0	0	0
+Plasmodium (Haemamoeba)	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Plasmodium relictum	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0
+Plasmodium (Vinckeia)	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Plasmodium vinckei	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0
+Plasmodium vinckei vinckei	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0

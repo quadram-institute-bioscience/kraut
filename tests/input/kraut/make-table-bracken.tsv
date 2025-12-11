@@ -1,0 +1,46 @@
+#Taxon	Akkermansia_muciniphila	Escherichia_coli_K12	Escherichia_coli_O157-H7	Klebsiella_pneumoniae	Mediterraneibacter_gnavus	Methanobrevibacter_smithii	Methanosphaera_stadtmanae	Ruminococcus_bromii	Salmonella_enterica_Typhimurium	Segatella_copri	all_genomes	archea	four-bact	other-bact	two-bact
+Akkermansia muciniphila	132262	0	0	0	0	0	0	0	0	0	132178	0	132163	132189	132350
+Escherichia coli	0	182887	254874	0	0	0	0	0	0	0	462535	0	0	462921	0
+Escherichia fergusonii	0	167	19	0	0	0	0	0	0	0	57	0	0	57	0
+Escherichia albertii	0	45	13	0	0	0	0	0	0	0	36	0	0	36	0
+Shigella flexneri	0	28543	2088	0	0	0	0	0	0	0	6363	0	0	6369	0
+Shigella dysenteriae	0	1259	97	0	0	0	0	0	0	0	286	0	0	287	0
+Salmonella enterica	0	0	58	0	0	0	0	0	226388	0	231796	0	226465	231891	0
+Klebsiella pneumoniae	0	0	0	258564	0	0	0	0	0	0	252972	0	0	253099	0
+Klebsiella quasipneumoniae	0	0	0	665	0	0	0	0	0	0	656	0	0	656	0
+Klebsiella variicola	0	0	0	689	0	0	0	0	0	0	766	0	0	766	0
+Klebsiella quasivariicola	0	0	0	26	0	0	0	0	0	0	26	0	0	26	0
+Mediterraneibacter gnavus	0	0	0	0	157338	0	0	0	0	0	158247	0	0	0	0
+Dorea longicatena	0	0	0	0	13	0	0	0	0	0	13	0	0	0	0
+Methanobrevibacter smithii	0	0	0	0	0	75756	0	0	0	0	75858	75830	0	0	0
+Methanobrevibacter intestini	0	0	0	0	0	140	0	0	0	0	140	140	0	0	0
+Methanobrevibacter sp. TLL-48-HuF1	0	0	0	0	0	55	0	0	0	0	55	55	0	0	0
+Methanobrevibacter acididurans	0	0	0	0	0	10	0	0	0	0	10	10	0	0	0
+Homo sapiens	0	0	0	0	0	15	0	0	0	17	52	29	19	23	0
+Methanosphaera stadtmanae	0	0	0	0	0	0	65536	0	0	0	65479	65461	0	0	0
+Ruminococcus sp. JL13D9	0	0	0	0	0	0	0	549	0	0	537	0	541	541	541
+Ruminococcus sp. JE7B6	0	0	0	0	0	0	0	114	0	0	111	0	112	112	112
+Ruminococcus bovis	0	0	0	0	0	0	0	31	0	0	24	0	26	27	27
+Ruminococcus bicirculans (ex Wegman et al. 2014)	0	0	0	0	0	0	0	26	0	0	17	0	24	24	24
+Oscillibacter sp. PEA192	0	0	0	0	0	0	0	91	0	0	33	0	75	75	75
+Eubacterium callanderi	0	0	0	0	0	0	0	31	0	0	14	0	27	27	27
+Coprococcus sp. ART55/1	0	0	0	0	0	0	0	64	0	0	36	0	57	57	57
+Coprococcus eutactus	0	0	0	0	0	0	0	115	0	0	58	0	99	99	99
+Anaerobutyricum hallii	0	0	0	0	0	0	0	114	0	0	34	0	100	100	100
+Roseburia hominis	0	0	0	0	0	0	0	70	0	0	21	0	63	63	63
+Eshraghiella crossota	0	0	0	0	0	0	0	59	0	0	26	0	54	54	54
+Dorea formicigenerans	0	0	0	0	0	0	0	42	0	0	11	0	38	38	38
+Salmonella bongori	0	0	0	0	0	0	0	0	16	0	16	0	16	16	0
+Segatella copri	0	0	0	0	0	0	0	0	0	162221	162347	0	162332	162372	0
+Olivibacter sp. LS-1	0	0	0	0	0	0	0	0	0	10	10	0	10	10	0
+Escherichia sp. E4742	0	0	0	0	0	0	0	0	0	0	22	0	0	22	0
+Escherichia marmotae	0	0	0	0	0	0	0	0	0	0	22	0	0	22	0
+Klebsiella michiganensis	0	0	0	0	0	0	0	0	0	0	77	0	0	77	0
+Shigella boydii	0	0	0	0	0	0	0	0	0	0	238	0	0	238	0
+Kosakonia radicincitans	0	0	0	0	0	0	0	0	0	0	18	0	0	18	0
+Scandinavium goeteborgense	0	0	0	0	0	0	0	0	0	0	14	0	0	14	0
+Bdellovibrio bacteriovorus	0	0	0	0	0	0	0	0	0	0	10	0	0	10	0
+Methanosphaera sp. BMS	0	0	0	0	0	0	0	0	0	0	12	12	0	0	0
+Musa acuminata	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0
+Malania oleifera	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0
+Cryptomeria japonica	0	0	0	0	0	0	0	0	0	0	22	0	0	0	0
