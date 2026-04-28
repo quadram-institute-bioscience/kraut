@@ -189,6 +189,62 @@ def test_plot_multi_writes_supported_outputs(tmp_path, suffix):
     assert output_file.stat().st_size > 0
 
 
+@pytest.mark.parametrize("suffix", [".html", ".png"])
+def test_plot_multi_writes_bubble_outputs(tmp_path, suffix):
+    alpha = tmp_path / "alpha.tsv"
+    beta = tmp_path / "beta.tsv"
+    output_file = tmp_path / f"bubble{suffix}"
+    write_plot_report(
+        alpha,
+        unclassified_count=10,
+        species_counts={
+            "Escherichia coli": 70,
+            "Salmonella enterica": 20,
+        },
+    )
+    write_plot_report(
+        beta,
+        unclassified_count=5,
+        species_counts={
+            "Escherichia coli": 10,
+            "Salmonella enterica": 85,
+        },
+    )
+
+    plot_multi.run(
+        input_files=[alpha, beta],
+        output_file=output_file,
+        min_perc=0.0,
+        kind="bubble",
+        width=4.0,
+        height=3.0,
+        dpi=72,
+    )
+
+    assert output_file.exists()
+    assert output_file.stat().st_size > 0
+    if suffix == ".html":
+        html = output_file.read_text().lower()
+        assert "<html" in html
+        assert "scatter" in html
+
+
+def test_plot_multi_rejects_unsupported_kind(tmp_path):
+    alpha = tmp_path / "alpha.tsv"
+    output_file = tmp_path / "multi.png"
+    write_plot_report(
+        alpha,
+        unclassified_count=10,
+        species_counts={"Escherichia coli": 90},
+    )
+
+    with pytest.raises(typer.Exit) as exc:
+        plot_multi.run(input_files=[alpha], output_file=output_file, kind="cloud")
+
+    assert exc.value.exit_code == 1
+    assert not output_file.exists()
+
+
 def test_plot_single_rejects_unsupported_output_suffix(tmp_path):
     input_file = tmp_path / "alpha.tsv"
     output_file = tmp_path / "single.txt"
