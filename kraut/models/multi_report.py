@@ -105,28 +105,43 @@ class MultiKrakenReport:
         
         return df
 
-    def to_tsv(self, metric: str = 'TOT', level: str = 'S', 
-               no_unclassified: bool = False, 
-               use_taxid: bool = False, rank_prefix: bool = False) -> str:
-        
-        # Map old 'COUNTS' to 'TOT' for backward compatibility defaults if needed, 
+    def _unclassified_row(self, metric: str, use_taxid: bool, rank_prefix: bool) -> dict | None:
+        """Build a single unclassified row dict, or None if not present."""
+        unclassified_entry = self.data.get(0)
+        if unclassified_entry is None:
+            return None
+
+        if use_taxid:
+            key = "0"
+        else:
+            name = unclassified_entry['name'].strip()
+            key = f"u__{name}" if rank_prefix else name
+
+        source_dict = unclassified_entry['taxon_counts'] if metric == 'LVL' else unclassified_entry['clade_counts']
+        row = {'#Taxon': key}
+        for i, sample in enumerate(self.samples):
+            row[sample] = source_dict.get(i, 0)
+        return row
+
+    def to_tsv(self, metric: str = 'TOT', level: str = 'S',
+               no_unclassified: bool = False,
+               use_taxid: bool = False, rank_prefix: bool = False,
+               min_perc: float = 0.0) -> str:
+
+        # Map old 'COUNTS' to 'TOT' for backward compatibility defaults if needed,
         # or just assume caller uses new constants.
         if metric == 'COUNTS':
             metric = 'TOT'
-            
+
         df = self.to_dataframe(metric, level, use_taxid, rank_prefix)
-        
+
         if df.empty:
             return ""
 
-        if no_unclassified:
-            # Assuming '#Taxon' contains 'unclassified' or we track taxid differently?
-            # to_dataframe flattened it. 
-            # We should probably filter BEFORE if we want to be safe, or check the string.
-            # Kraken unclassified name is 'unclassified'.
-            df = df[df['#Taxon'] != 'unclassified']
-            if rank_prefix:
-                 df = df[df['#Taxon'] != 'u__unclassified'] # if U rank
+        if not no_unclassified:
+            unclassified_row = self._unclassified_row(metric, use_taxid, rank_prefix)
+            if unclassified_row:
+                df = pd.concat([pd.DataFrame([unclassified_row]), df], ignore_index=True)
 
         if metric == 'PERCENTAGE':
             # Normalize sample columns
@@ -135,5 +150,16 @@ class MultiKrakenReport:
                 total = df[col].sum()
                 if total > 0:
                     df[col] = (df[col] / total) * 100
-                    
+
+        if min_perc > 0.0:
+            sample_cols = self.samples
+            col_totals = {col: df[col].sum() for col in sample_cols}
+            def row_max_perc(row):
+                return max(
+                    (row[col] / col_totals[col] * 100 if col_totals[col] > 0 else 0.0)
+                    for col in sample_cols
+                )
+            mask = df.apply(row_max_perc, axis=1) >= min_perc
+            df = df[mask]
+
         return df.to_csv(sep='\t', index=False)

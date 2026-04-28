@@ -4,3 +4,4 @@ scrapbook/
 
 *.pyc
 __pycache__
+build/

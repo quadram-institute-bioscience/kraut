@@ -4,7 +4,7 @@ from kraut.models.kraken_data import KrakenReport, KrakenNode
 from kraut.models.multi_report import MultiKrakenReport
 
 # Sample data path
-SAMPLE_DATA = Path("kraken/genome/Segatella_copri.tsv")
+SAMPLE_DATA = Path(__file__).parent / "input/kraken-reports/Segatella_copri.tsv"
 
 def test_parsing_and_reproduction():
     """

@@ -12,7 +12,8 @@ def run(
     level: str = typer.Option("S", "--rank", "-r", help="Taxonomic rank (K,P,C,O,F,G,S,ALL)"),
     rank_prefix: bool = typer.Option(False, "--rank-prefix", "-p", help="Add rank prefix (e.g. s__Species)"),
     use_taxid: bool = typer.Option(False, "--taxid", help="Use TaxID instead of name"),
-    no_unclassified: bool = typer.Option(False, "--no-unclassified", help="Exclude unclassified reads") # Implicitly requested as useful?
+    no_unclassified: bool = typer.Option(False, "--no-unclassified", help="Exclude unclassified reads"),
+    min_perc: float = typer.Option(0.0, "--min-perc", help="Remove rows where no sample reaches this %% abundance")
 ):
     """
     Generate a table from multiple reports with customizable formatting.
@@ -32,11 +33,12 @@ def run(
         multi_report.add_report(report, sample_name)
         
     result = multi_report.to_tsv(
-        metric=metric, 
-        level=level, 
+        metric=metric,
+        level=level,
         no_unclassified=no_unclassified,
         use_taxid=use_taxid,
-        rank_prefix=rank_prefix
+        rank_prefix=rank_prefix,
+        min_perc=min_perc
     )
     
     if output_file:
