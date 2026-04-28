@@ -1,0 +1,205 @@
+from pathlib import Path
+
+import pandas as pd
+import pytest
+import typer
+
+from kraut.commands import make_table_cmd, plot_multi, plot_single, split_table_cmd
+
+
+def write_report(path: Path, species_clade_count: int, species_taxon_count: int) -> None:
+    path.write_text(
+        " 10.00\t10\t10\tU\t0\tunclassified\n"
+        " 90.00\t90\t0\tR\t1\troot\n"
+        f" 90.00\t90\t{90 - species_taxon_count}\tD\t2\t  Bacteria\n"
+        f" 80.00\t{species_clade_count}\t0\tG\t561\t    Escherichia\n"
+        f" 70.00\t{species_clade_count}\t{species_taxon_count}"
+        "\tS\t562\t      Escherichia coli\n"
+    )
+
+
+def test_make_table_command_writes_named_samples_from_input_stems(tmp_path):
+    alpha = tmp_path / "alpha.krep.tsv"
+    beta = tmp_path / "beta.tsv"
+    output = tmp_path / "table.tsv"
+    write_report(alpha, species_clade_count=70, species_taxon_count=30)
+    write_report(beta, species_clade_count=8, species_taxon_count=5)
+
+    make_table_cmd.run(
+        input_files=[alpha, beta],
+        output_file=output,
+        metric="LVL",
+        level="S",
+        rank_prefix=True,
+        use_taxid=False,
+        no_unclassified=True,
+        min_perc=0.0,
+    )
+
+    df = pd.read_csv(output, sep="\t")
+
+    assert list(df.columns) == ["#Taxon", "alpha", "beta"]
+    assert df.to_dict("records") == [
+        {"#Taxon": "s__Escherichia coli", "alpha": 30, "beta": 5}
+    ]
+
+
+def write_combined_krakentools_table(path: Path) -> None:
+    path.write_text(
+        "#Number of Samples: 2\n"
+        "#S1\treports/alpha.krep.tsv\n"
+        "#S2\treports/beta.tsv\n"
+        "#perc\ttot_all\ttot_lvl\tS1_all\tS1_lvl\tS2_all\tS2_lvl"
+        "\tlvl_type\ttaxid\tname\n"
+        "70.0\t100\t10\t70\t7\t30\t3\tS\t562\t  Escherichia coli\n"
+        "30.0\t900\t0\t400\t0\t500\t0\tR\t1\troot\n"
+    )
+
+
+def test_split_combine_table_creates_all_and_lvl_outputs(tmp_path):
+    input_table = tmp_path / "combined.tsv"
+    output_base = tmp_path / "split"
+    write_combined_krakentools_table(input_table)
+
+    split_table_cmd.run(
+        input_file=input_table,
+        output_basename=str(output_base),
+        use_taxid=False,
+        rank_filter="S",
+    )
+
+    all_df = pd.read_csv(f"{output_base}_all.tsv", sep="\t")
+    lvl_df = pd.read_csv(f"{output_base}_lvl.tsv", sep="\t")
+
+    assert all_df.to_dict("records") == [
+        {"#Taxon": "Escherichia coli", "alpha": 70, "beta": 30}
+    ]
+    assert lvl_df.to_dict("records") == [
+        {"#Taxon": "Escherichia coli", "alpha": 7, "beta": 3}
+    ]
+
+
+def test_split_combine_table_can_use_taxids_as_row_labels(tmp_path):
+    input_table = tmp_path / "combined.tsv"
+    output_base = tmp_path / "taxid"
+    write_combined_krakentools_table(input_table)
+
+    split_table_cmd.run(
+        input_file=input_table,
+        output_basename=str(output_base),
+        use_taxid=True,
+        rank_filter=None,
+    )
+
+    all_df = pd.read_csv(f"{output_base}_all.tsv", sep="\t")
+
+    assert list(all_df["#Taxon"]) == [562, 1]
+    assert list(all_df["alpha"]) == [70, 400]
+    assert list(all_df["beta"]) == [30, 500]
+
+
+def write_plot_report(path: Path, unclassified_count: int, species_counts: dict) -> None:
+    classified_total = sum(species_counts.values())
+    total = unclassified_count + classified_total
+    species_taxids = {
+        "Escherichia coli": 562,
+        "Salmonella enterica": 28901,
+        "Lactobacillus crispatus": 47770,
+    }
+    lines = [
+        (
+            f"{unclassified_count / total * 100:6.2f}\t{unclassified_count}"
+            f"\t{unclassified_count}\tU\t0\tunclassified\n"
+        ),
+        f"{100.0:6.2f}\t{classified_total}\t0\tR\t1\troot\n",
+        (
+            f"{classified_total / total * 100:6.2f}\t{classified_total}"
+            "\t0\tD\t2\t  Bacteria\n"
+        ),
+    ]
+    for name, count in species_counts.items():
+        lines.append(
+            f"{count / total * 100:6.2f}\t{count}\t{count}\tS"
+            f"\t{species_taxids[name]}\t    {name}\n"
+        )
+    path.write_text("".join(lines))
+
+
+@pytest.mark.parametrize("suffix", [".html", ".png", ".pdf", ".svg"])
+def test_plot_single_writes_supported_outputs(tmp_path, suffix):
+    input_file = tmp_path / "alpha.tsv"
+    output_file = tmp_path / f"single{suffix}"
+    write_plot_report(
+        input_file,
+        unclassified_count=10,
+        species_counts={
+            "Escherichia coli": 70,
+            "Salmonella enterica": 20,
+        },
+    )
+
+    plot_single.run(
+        input_file=input_file,
+        output_file=output_file,
+        min_perc=0.0,
+        width=4.0,
+        height=3.0,
+        dpi=72,
+    )
+
+    assert output_file.exists()
+    assert output_file.stat().st_size > 0
+    if suffix == ".html":
+        assert "<html" in output_file.read_text().lower()
+
+
+@pytest.mark.parametrize("suffix", [".html", ".png"])
+def test_plot_multi_writes_supported_outputs(tmp_path, suffix):
+    alpha = tmp_path / "alpha.krep.tsv"
+    beta = tmp_path / "beta.tsv"
+    output_file = tmp_path / f"multi{suffix}"
+    write_plot_report(
+        alpha,
+        unclassified_count=10,
+        species_counts={
+            "Escherichia coli": 70,
+            "Salmonella enterica": 20,
+        },
+    )
+    write_plot_report(
+        beta,
+        unclassified_count=5,
+        species_counts={
+            "Escherichia coli": 10,
+            "Salmonella enterica": 85,
+        },
+    )
+
+    plot_multi.run(
+        input_files=[alpha, beta],
+        output_file=output_file,
+        min_perc=0.0,
+        top_taxa=1,
+        width=4.0,
+        height=3.0,
+        dpi=72,
+    )
+
+    assert output_file.exists()
+    assert output_file.stat().st_size > 0
+
+
+def test_plot_single_rejects_unsupported_output_suffix(tmp_path):
+    input_file = tmp_path / "alpha.tsv"
+    output_file = tmp_path / "single.txt"
+    write_plot_report(
+        input_file,
+        unclassified_count=10,
+        species_counts={"Escherichia coli": 90},
+    )
+
+    with pytest.raises(typer.Exit) as exc:
+        plot_single.run(input_file=input_file, output_file=output_file)
+
+    assert exc.value.exit_code == 1
+    assert not output_file.exists()
