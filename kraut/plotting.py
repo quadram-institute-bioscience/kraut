@@ -9,6 +9,7 @@ from kraut.models.multi_report import MultiKrakenReport
 
 STATIC_SUFFIXES = {".png", ".pdf", ".svg"}
 HTML_SUFFIXES = {".html"}
+PLOT_KINDS = {"stacked", "bubble"}
 UNCLASSIFIED_LABEL = "unclassified"
 OTHERS_LABEL = "Others"
 
@@ -143,13 +144,23 @@ def render_multi_composition(
     width: float = 9.0,
     height: float = 5.5,
     dpi: int = 300,
+    kind: str = "stacked",
 ) -> None:
     _require_data(df)
-    kind = output_kind(output_file)
-    if kind == "html":
+    plot_kind = kind.lower()
+    if plot_kind not in PLOT_KINDS:
+        supported = ", ".join(sorted(PLOT_KINDS))
+        raise ValueError(f"--kind must be one of: {supported}")
+
+    file_kind = output_kind(output_file)
+    if file_kind == "html" and plot_kind == "stacked":
         _render_multi_html(df, output_file, title)
-    else:
+    elif file_kind == "html":
+        _render_multi_bubble_html(df, output_file, title)
+    elif plot_kind == "stacked":
         _render_multi_static(df, output_file, title, width, height, dpi)
+    else:
+        _render_multi_bubble_static(df, output_file, title, width, height, dpi)
 
 
 def _raw_rows(
@@ -314,6 +325,55 @@ def _render_multi_static(
     plt.close(fig)
 
 
+def _render_multi_bubble_static(
+    df: pd.DataFrame,
+    output_file: Path,
+    title: Optional[str],
+    width: float,
+    height: float,
+    dpi: int,
+) -> None:
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    sample_cols = _sample_columns(df)
+    categories = df["#Taxon"].tolist()
+    colors = _category_colors(categories)
+    fig, ax = plt.subplots(figsize=(width, height))
+
+    for y_idx, (category, color) in enumerate(zip(categories, colors)):
+        values = df.loc[df["#Taxon"] == category, sample_cols].iloc[0].astype(float)
+        for x_idx, value in enumerate(values):
+            if value <= 0:
+                continue
+            ax.scatter(
+                x_idx,
+                y_idx,
+                s=_bubble_size(value),
+                color=color,
+                edgecolor="white",
+                linewidth=0.8,
+                alpha=0.9,
+            )
+
+    ax.set_xticks(range(len(sample_cols)))
+    ax.set_xticklabels(sample_cols, rotation=45, ha="right")
+    ax.set_yticks(range(len(categories)))
+    ax.set_yticklabels(categories)
+    ax.invert_yaxis()
+    ax.set_xlabel("Sample")
+    ax.set_ylabel("Taxon")
+    ax.set_title(title or "Taxonomy composition")
+    ax.grid(axis="both", color="#E5E5E5", linewidth=0.8)
+    ax.set_axisbelow(True)
+    _add_bubble_size_legend(ax, df, sample_cols)
+    fig.tight_layout()
+    fig.savefig(output_file, dpi=dpi, bbox_inches="tight")
+    plt.close(fig)
+
+
 def _render_single_html(
     df: pd.DataFrame,
     sample: str,
@@ -372,3 +432,91 @@ def _render_multi_html(
         yaxis_range=[0, 100],
     )
     fig.write_html(output_file)
+
+
+def _render_multi_bubble_html(
+    df: pd.DataFrame,
+    output_file: Path,
+    title: Optional[str],
+) -> None:
+    import plotly.graph_objects as go
+
+    sample_cols = _sample_columns(df)
+    categories = df["#Taxon"].tolist()
+    colors = _category_colors(categories)
+    max_value = max(df[sample_cols].max().max(), 1.0)
+    sizeref = 2.0 * max_value / (48.0**2)
+
+    fig = go.Figure()
+    for category, color in zip(categories, colors):
+        values = df.loc[df["#Taxon"] == category, sample_cols].iloc[0].astype(float)
+        positive = values[values > 0]
+        if positive.empty:
+            continue
+        fig.add_trace(
+            go.Scatter(
+                name=category,
+                x=positive.index.tolist(),
+                y=[category] * len(positive),
+                mode="markers",
+                customdata=positive.tolist(),
+                marker={
+                    "color": color,
+                    "line": {"color": "white", "width": 1},
+                    "size": positive.tolist(),
+                    "sizemode": "area",
+                    "sizeref": sizeref,
+                    "sizemin": 4,
+                },
+                hovertemplate=(
+                    "Sample: %{x}<br>"
+                    "Taxon: %{y}<br>"
+                    "Composition: %{customdata:.2f}%<extra></extra>"
+                ),
+            )
+        )
+
+    fig.update_layout(
+        title=title or "Taxonomy composition",
+        xaxis_title="Sample",
+        yaxis_title="Taxon",
+        yaxis={
+            "categoryorder": "array",
+            "categoryarray": list(reversed(categories)),
+        },
+    )
+    fig.write_html(output_file)
+
+
+def _bubble_size(value: float) -> float:
+    return max(value * 18.0, 12.0)
+
+
+def _add_bubble_size_legend(ax, df: pd.DataFrame, sample_cols: List[str]) -> None:
+    max_value = df[sample_cols].max().max()
+    legend_values = [value for value in [1, 5, 10, 25, 50] if value <= max_value]
+    if not legend_values or legend_values[-1] < max_value:
+        legend_values.append(round(max_value, 1))
+
+    handles = [
+        ax.scatter(
+            [],
+            [],
+            s=_bubble_size(value),
+            color="#B0B0B0",
+            edgecolor="white",
+            linewidth=0.8,
+            alpha=0.9,
+        )
+        for value in legend_values
+    ]
+    labels = [f"{value:g}%" for value in legend_values]
+    ax.legend(
+        handles,
+        labels,
+        title="Composition",
+        loc="center left",
+        bbox_to_anchor=(1.0, 0.5),
+        frameon=False,
+        scatterpoints=1,
+    )

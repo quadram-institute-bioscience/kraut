@@ -40,6 +40,11 @@ def run(
     width: float = typer.Option(9.0, "--width", help="Static plot width in inches"),
     height: float = typer.Option(5.5, "--height", help="Static plot height in inches"),
     dpi: int = typer.Option(300, "--dpi", help="Static plot DPI"),
+    kind: str = typer.Option(
+        "stacked",
+        "--kind",
+        help="Plot kind: stacked or bubble",
+    ),
 ):
     """Plot taxonomy composition across multiple Kraken reports."""
     missing = [input_file for input_file in input_files if not input_file.exists()]
@@ -56,6 +61,7 @@ def run(
     width = _direct_default(width, 9.0)
     height = _direct_default(height, 5.5)
     dpi = _direct_default(dpi, 300)
+    kind = _direct_default(kind, "stacked")
 
     try:
         multi_report = build_multi_report(input_files)
@@ -74,6 +80,7 @@ def run(
             width=width,
             height=height,
             dpi=dpi,
+            kind=kind,
         )
     except ValueError as exc:
         typer.echo(f"Error: {exc}", err=True)

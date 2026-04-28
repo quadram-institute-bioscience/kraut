@@ -34,7 +34,7 @@ pytest
 - `make-table`: build a configurable multi-sample abundance table.
 - `split-combine-table`: split a KrakenTools combined table into ALL/LVL tables.
 - `plot-single`: plot one sample as an HTML or static composition chart.
-- `plot-multi`: plot multiple samples as an HTML or static stacked composition chart.
+- `plot-multi`: plot multiple samples as an HTML or static stacked/bubble chart.
 
 
 Example plots:
@@ -44,4 +44,3 @@ Example plots:
 
 
 ![Kraut Single](https://raw.githubusercontent.com/quadram-institute-bioscience/kraut/main/docs/single.png)
-
