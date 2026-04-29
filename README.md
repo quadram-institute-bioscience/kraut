@@ -1,5 +1,12 @@
 # kraut
 
+![GitHub Release](https://img.shields.io/github/v/release/quadram-institute-bioscience/kraut)
+![PyPI - Status](https://img.shields.io/pypi/status/krautils)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/krautils)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/quadram-institute-bioscience/kraut)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 ![Kraut logo](https://raw.githubusercontent.com/quadram-institute-bioscience/kraut/main/docs/kraut.png)
 
 
@@ -49,3 +56,7 @@ Example plots:
 
 
 ![Kraut Single](https://raw.githubusercontent.com/quadram-institute-bioscience/kraut/main/docs/single.png)
+
+### License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).

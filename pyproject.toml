@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,6 +8,8 @@ version = "0.3.0"
 description = "A python package for parsing, merging, and analyzing Kraken2 output files."
 authors = [{name = "Andrea Telatin", email = "andrea.telatin@quadram.ac.uk"}]
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 
 requires-python = ">=3.10"
 dependencies = [
