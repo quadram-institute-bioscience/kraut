@@ -289,6 +289,46 @@ def test_ranks_command_can_write_counts(tmp_path):
     assert df.loc[df["#Rank"] == "S", "alpha"].iloc[0] == 30
 
 
+@pytest.mark.parametrize("suffix", [".html", ".png"])
+def test_ranks_command_can_write_stacked_rank_plot(tmp_path, suffix):
+    kraken = tmp_path / "alpha.krep.tsv"
+    bracken = tmp_path / "beta.brep"
+    output = tmp_path / "ranks.tsv"
+    plot = tmp_path / f"ranks{suffix}"
+    write_report(kraken, species_clade_count=70, species_taxon_count=30)
+    write_bracken_report(
+        bracken,
+        species_counts={
+            "Escherichia coli": 15,
+            "Salmonella enterica": 35,
+        },
+    )
+
+    ranks_cmd.run(input_files=[kraken, bracken], output_file=output, plot_file=plot)
+
+    assert output.exists()
+    assert plot.exists()
+    assert plot.stat().st_size > 0
+    if suffix == ".html":
+        html = plot.read_text().lower()
+        assert "<html" in html
+        assert "rank composition" in html
+
+
+def test_ranks_command_rejects_unsupported_plot_suffix(tmp_path):
+    kraken = tmp_path / "alpha.krep.tsv"
+    output = tmp_path / "ranks.tsv"
+    plot = tmp_path / "ranks.txt"
+    write_report(kraken, species_clade_count=70, species_taxon_count=30)
+
+    with pytest.raises(typer.Exit) as exc:
+        ranks_cmd.run(input_files=[kraken], output_file=output, plot_file=plot)
+
+    assert exc.value.exit_code == 1
+    assert not output.exists()
+    assert not plot.exists()
+
+
 @pytest.mark.parametrize("suffix", [".html", ".png", ".pdf", ".svg"])
 def test_plot_single_writes_supported_outputs(tmp_path, suffix):
     input_file = tmp_path / "alpha.tsv"
