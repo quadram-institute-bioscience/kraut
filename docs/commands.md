@@ -7,6 +7,7 @@ Kraut provides several subcommands for different tasks. Click on a command name 
 - [**single-report**](commands/single-report.md): Filter or reformat a single Kraken report.
 - [**merge-reports**](commands/merge-reports.md): Merge multiple reports into a simple comparison table.
 - [**make-table**](commands/make-table.md): Build a configurable multi-sample abundance table.
+- **ma-export**: Export reports for MicrobiomeAnalyst as `counts.csv`, `taxonomy.csv`, `metadata.csv`, and `tree.nwk`.
 - [**alpha**](commands/alpha.md): Calculate alpha diversity metrics.
 - [**beta**](commands/beta.md): Calculate beta diversity distance matrices and ordination plots.
 - [**plot-single**](commands/plot-single.md): Plot composition for one sample.

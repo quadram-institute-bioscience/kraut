@@ -39,6 +39,7 @@ pytest
 - `single-report`: filter or reformat one Kraken report.
 - `merge-reports`: merge reports into a simple comparison table.
 - `make-table`: build a configurable multi-sample abundance table.
+- `ma-export`: export reports for MicrobiomeAnalyst as counts, taxonomy, metadata, and tree files.
 - `alpha`: calculate alpha diversity from Kraken or Bracken reports.
 - `beta`: calculate beta diversity distance matrices and heatmap/PCA plots.
 - `split-combine-table`: split a KrakenTools combined table into ALL/LVL tables.
@@ -48,7 +49,12 @@ pytest
 ```bash
 kraut alpha reports/*.tsv -o alpha.tsv -p alpha.html --metrics core --add-metrics chao1,ace
 kraut beta reports/*.tsv -o beta.tsv --plot beta.html --pca beta_pca.html
+kraut ma-export reports/*.tsv -o microbiomeanalyst --metadata metadata.tsv --metadata-sample-col Sample
 ```
+
+`ma-export` writes `counts.csv`, `taxonomy.csv`, `metadata.csv`, and `tree.nwk`.
+It uses taxon-specific counts by default (`--metric LVL`); use `--metric TOT`
+for cumulative clade counts.
 
 
 Example plots:
