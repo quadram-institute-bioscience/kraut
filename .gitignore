@@ -5,3 +5,5 @@ scrapbook/
 *.pyc
 __pycache__
 build/
+ferm/
+.DS_Store
