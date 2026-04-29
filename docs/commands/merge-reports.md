@@ -34,3 +34,6 @@ kraut merge-reports sample1.krep sample2.krep sample3.krep -o merged_counts.tsv
 ```bash
 kraut merge-reports reports/*.krep -l G -m PERCENTAGES -o genus_percentages.tsv
 ```
+
+---
+[← Back to Commands](../commands.md)

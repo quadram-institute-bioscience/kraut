@@ -1,5 +1,7 @@
 # Commands
 
+[Overview](index.md) | [Installation](installation.md) | [Commands](commands.md)
+
 Kraut provides several subcommands for different tasks. Click on a command name to see its syntax and examples.
 
 - [**single-report**](commands/single-report.md): Filter or reformat a single Kraken report.

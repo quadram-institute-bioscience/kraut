@@ -1,5 +1,7 @@
 # Kraut Overview
 
+[Overview](index.md) | [Installation](installation.md) | [Commands](commands.md)
+
 ![Kraut logo](kraut.png)
 
 **Kraut** (packaged as `krautils`) is a Python toolset for parsing, merging, and analyzing Kraken2 taxonomic reports. It provides a suite of commands to handle single reports, merge multiple datasets, generate abundance tables, calculate alpha diversity, and create interactive or static visualizations.

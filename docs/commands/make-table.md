@@ -43,3 +43,6 @@ Keep only taxa that reach at least 0.5% abundance in at least one sample:
 ```bash
 kraut make-table data/*.krep --min-perc 0.5 -o filtered_table.tsv
 ```
+
+---
+[← Back to Commands](../commands.md)

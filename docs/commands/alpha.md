@@ -44,3 +44,6 @@ kraut alpha reports/*.krep --metrics "shannon,simpson" -p alpha_plot.png
 ```bash
 kraut alpha bracken_outputs/*.brep -r G -o genus_alpha.tsv
 ```
+
+---
+[← Back to Commands](../commands.md)

@@ -1,5 +1,7 @@
 # Installation
 
+[Overview](index.md) | [Installation](installation.md) | [Commands](commands.md)
+
 Kraut is available on PyPI as `krautils`. You can install it using `pip` or from the source repository.
 
 ## From PyPI

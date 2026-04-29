@@ -37,3 +37,6 @@ Only show results from Phylum to Genus:
 ```bash
 kraut single-report -i sample.krep -l P -L G
 ```
+
+---
+[← Back to Commands](../commands.md)
