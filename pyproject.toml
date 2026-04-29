@@ -4,12 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "krautils"
-version = "0.3.0"
+version = "0.4.0"
 description = "A python package for parsing, merging, and analyzing Kraken2 output files."
 authors = [{name = "Andrea Telatin", email = "andrea.telatin@quadram.ac.uk"}]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
+keywords = ["kraken2", "taxonomy", "bioinformatics", "metagenomics"]
+urls = {Homepage = "https://quadram-institute-bioscience.github.io/kraut", Repository = "https://github.com/quadram-institute-bioscience/kraut", Issues = "https://github.com/quadram-institute-bioscience/kraut/issues"}
 
 requires-python = ">=3.10"
 dependencies = [
