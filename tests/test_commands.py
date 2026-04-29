@@ -7,6 +7,7 @@ import typer
 import kraut.alpha_diversity as alpha_diversity
 from kraut.commands import (
     alpha_cmd,
+    beta as beta_cmd,
     make_table_cmd,
     plot_multi,
     plot_single,
@@ -243,6 +244,76 @@ def test_alpha_command_writes_table_and_plot_for_kraken_and_bracken(
     ) == [{"alpha": 2.0, "beta": 2.0}]
     assert output_plot.exists()
     assert output_plot.stat().st_size > 0
+
+
+def test_beta_command_writes_matrix_heatmap_and_pca_from_reports(tmp_path):
+    kraken = tmp_path / "alpha.krep.tsv"
+    bracken = tmp_path / "beta.brep"
+    output_table = tmp_path / "beta.tsv"
+    heatmap = tmp_path / "beta.svg"
+    pca = tmp_path / "beta_pca.svg"
+    write_plot_report(
+        kraken,
+        unclassified_count=10,
+        species_counts={
+            "Escherichia coli": 70,
+            "Salmonella enterica": 20,
+        },
+    )
+    write_bracken_report(
+        bracken,
+        species_counts={
+            "Escherichia coli": 15,
+            "Salmonella enterica": 35,
+        },
+    )
+
+    beta_cmd.run(
+        input_files=[kraken, bracken],
+        output_file=output_table,
+        plot_file=heatmap,
+        pca_file=pca,
+        metric="braycurtis",
+        width=4.0,
+        height=3.0,
+        dpi=72,
+    )
+
+    df = pd.read_csv(output_table, sep="\t")
+
+    assert list(df.columns) == ["#Sample", "alpha", "beta"]
+    assert list(df["#Sample"]) == ["alpha", "beta"]
+    assert df.loc[df["#Sample"] == "alpha", "alpha"].iloc[0] == pytest.approx(0.0)
+    assert heatmap.exists()
+    assert heatmap.stat().st_size > 0
+    assert pca.exists()
+    assert pca.stat().st_size > 0
+
+
+def test_beta_command_reads_wide_table_and_writes_stdout(tmp_path, capsys):
+    table = tmp_path / "table.tsv"
+    table.write_text("#Taxon\talpha\tbeta\tgamma\n" "t1\t10\t0\t10\n" "t2\t0\t10\t10\n")
+
+    beta_cmd.run(input_files=[table], metric="jaccard")
+    captured = capsys.readouterr()
+
+    assert "Warning: Jaccard" in captured.err
+    assert captured.out.splitlines()[0] == "#Sample\talpha\tbeta\tgamma"
+    assert "alpha\t0.0\t1.0\t0.5" in captured.out
+
+
+def test_beta_command_rejects_unsupported_plot_suffix(tmp_path):
+    table = tmp_path / "table.tsv"
+    output = tmp_path / "beta.tsv"
+    plot = tmp_path / "beta.txt"
+    table.write_text("#Taxon\talpha\tbeta\n" "t1\t10\t0\n" "t2\t0\t10\n")
+
+    with pytest.raises(typer.Exit) as exc:
+        beta_cmd.run(input_files=[table], output_file=output, plot_file=plot)
+
+    assert exc.value.exit_code == 1
+    assert not output.exists()
+    assert not plot.exists()
 
 
 def test_ranks_command_writes_percentages_that_sum_to_100(tmp_path):
