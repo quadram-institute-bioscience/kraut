@@ -32,9 +32,14 @@ pytest
 - `single-report`: filter or reformat one Kraken report.
 - `merge-reports`: merge reports into a simple comparison table.
 - `make-table`: build a configurable multi-sample abundance table.
+- `alpha`: calculate alpha diversity from Kraken or Bracken reports.
 - `split-combine-table`: split a KrakenTools combined table into ALL/LVL tables.
 - `plot-single`: plot one sample as an HTML or static composition chart.
 - `plot-multi`: plot multiple samples as an HTML or static stacked/bubble chart.
+
+```bash
+kraut alpha reports/*.tsv -o alpha.tsv -p alpha.html --metrics core --add-metrics chao1,ace
+```
 
 
 Example plots:
