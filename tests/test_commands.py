@@ -10,6 +10,7 @@ from kraut.commands import (
     make_table_cmd,
     plot_multi,
     plot_single,
+    ranks_cmd,
     split_table_cmd,
 )
 
@@ -242,6 +243,50 @@ def test_alpha_command_writes_table_and_plot_for_kraken_and_bracken(
     ) == [{"alpha": 2.0, "beta": 2.0}]
     assert output_plot.exists()
     assert output_plot.stat().st_size > 0
+
+
+def test_ranks_command_writes_percentages_that_sum_to_100(tmp_path):
+    kraken = tmp_path / "alpha.krep.tsv"
+    bracken = tmp_path / "beta.brep"
+    output = tmp_path / "ranks.tsv"
+    write_report(kraken, species_clade_count=70, species_taxon_count=30)
+    write_bracken_report(
+        bracken,
+        species_counts={
+            "Escherichia coli": 15,
+            "Salmonella enterica": 35,
+        },
+    )
+
+    ranks_cmd.run(input_files=[kraken, bracken], output_file=output)
+
+    df = pd.read_csv(output, sep="\t")
+
+    assert list(df["#Rank"]) == ["U", "R", "D", "K", "P", "C", "O", "F", "G", "S"]
+    assert df["alpha"].sum() == pytest.approx(100.0)
+    assert df["beta"].sum() == pytest.approx(100.0)
+    assert df.loc[df["#Rank"] == "U", "alpha"].iloc[0] == pytest.approx(10.0)
+    assert df.loc[df["#Rank"] == "D", "alpha"].iloc[0] == pytest.approx(60.0)
+    assert df.loc[df["#Rank"] == "S", "alpha"].iloc[0] == pytest.approx(30.0)
+    assert df.loc[df["#Rank"] == "U", "beta"].iloc[0] == pytest.approx(0.0)
+    assert df.loc[df["#Rank"] == "S", "beta"].iloc[0] == pytest.approx(100.0)
+
+
+def test_ranks_command_can_write_counts(tmp_path):
+    kraken = tmp_path / "alpha.krep.tsv"
+    output = tmp_path / "ranks.tsv"
+    write_report(kraken, species_clade_count=70, species_taxon_count=30)
+
+    ranks_cmd.run(input_files=[kraken], output_file=output, counts=True)
+
+    df = pd.read_csv(output, sep="\t")
+
+    assert list(df["#Rank"]) == ["U", "R", "D", "K", "P", "C", "O", "F", "G", "S"]
+    assert df.loc[df["#Rank"] == "U", "alpha"].iloc[0] == 10
+    assert df.loc[df["#Rank"] == "R", "alpha"].iloc[0] == 0
+    assert df.loc[df["#Rank"] == "D", "alpha"].iloc[0] == 60
+    assert df.loc[df["#Rank"] == "G", "alpha"].iloc[0] == 0
+    assert df.loc[df["#Rank"] == "S", "alpha"].iloc[0] == 30
 
 
 @pytest.mark.parametrize("suffix", [".html", ".png", ".pdf", ".svg"])
