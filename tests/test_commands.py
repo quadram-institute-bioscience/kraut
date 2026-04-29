@@ -4,10 +4,21 @@ import pandas as pd
 import pytest
 import typer
 
-from kraut.commands import make_table_cmd, plot_multi, plot_single, split_table_cmd
+import kraut.alpha_diversity as alpha_diversity
+from kraut.commands import (
+    alpha_cmd,
+    make_table_cmd,
+    plot_multi,
+    plot_single,
+    split_table_cmd,
+)
 
 
-def write_report(path: Path, species_clade_count: int, species_taxon_count: int) -> None:
+def write_report(
+    path: Path,
+    species_clade_count: int,
+    species_taxon_count: int,
+) -> None:
     path.write_text(
         " 10.00\t10\t10\tU\t0\tunclassified\n"
         " 90.00\t90\t0\tR\t1\troot\n"
@@ -98,7 +109,11 @@ def test_split_combine_table_can_use_taxids_as_row_labels(tmp_path):
     assert list(all_df["beta"]) == [30, 500]
 
 
-def write_plot_report(path: Path, unclassified_count: int, species_counts: dict) -> None:
+def write_plot_report(
+    path: Path,
+    unclassified_count: int,
+    species_counts: dict,
+) -> None:
     classified_total = sum(species_counts.values())
     total = unclassified_count + classified_total
     species_taxids = {
@@ -123,6 +138,110 @@ def write_plot_report(path: Path, unclassified_count: int, species_counts: dict)
             f"\t{species_taxids[name]}\t    {name}\n"
         )
     path.write_text("".join(lines))
+
+
+def write_bracken_report(path: Path, species_counts: dict) -> None:
+    total = sum(species_counts.values())
+    lines = [
+        f"{100.0:6.2f}\t{total}\t0\tR\t1\troot\n",
+        f"{100.0:6.2f}\t{total}\t0\tD\t2\t  Bacteria\n",
+    ]
+    for idx, (name, count) in enumerate(species_counts.items(), start=1000):
+        lines.append(
+            f"{count / total * 100:6.2f}\t{count}\t{count}\tS"
+            f"\t{idx}\t    {name}\n"
+        )
+    path.write_text("".join(lines))
+
+
+def fake_alpha_diversity(metric, counts, ids=None, validate=True):
+    data = counts.to_numpy()
+    values = []
+    for sample_counts in data:
+        observed = int((sample_counts > 0).sum())
+        total = int(sample_counts.sum())
+        if metric == "observed_features":
+            values.append(observed)
+        elif metric == "chao1":
+            values.append(observed + 1)
+        else:
+            values.append(total / max(observed, 1))
+    return pd.Series(values, index=ids)
+
+
+def fake_get_alpha_diversity_metrics():
+    return [
+        "observed_features",
+        "shannon",
+        "simpson",
+        "inv_simpson",
+        "pielou_e",
+        "dominance",
+        "goods_coverage",
+        "chao1",
+    ]
+
+
+def test_alpha_command_writes_table_and_plot_for_kraken_and_bracken(
+    tmp_path,
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        alpha_diversity,
+        "_load_skbio_diversity",
+        lambda: (fake_alpha_diversity, fake_get_alpha_diversity_metrics),
+    )
+    kraken = tmp_path / "alpha.krep.tsv"
+    bracken = tmp_path / "beta.brep"
+    output_table = tmp_path / "alpha.tsv"
+    output_plot = tmp_path / "alpha.svg"
+    write_plot_report(
+        kraken,
+        unclassified_count=10,
+        species_counts={
+            "Escherichia coli": 70,
+            "Salmonella enterica": 20,
+        },
+    )
+    write_bracken_report(
+        bracken,
+        species_counts={
+            "Escherichia coli": 15,
+            "Salmonella enterica": 35,
+        },
+    )
+
+    alpha_cmd.run(
+        input_files=[kraken, bracken],
+        output_table=output_table,
+        plot_file=output_plot,
+        rank="S",
+        metric="TOT",
+        metrics="core",
+        add_metrics="chao1",
+        width=4.0,
+        height=1.5,
+        dpi=72,
+    )
+
+    df = pd.read_csv(output_table, sep="\t")
+
+    assert list(df.columns) == ["#Metric", "alpha", "beta"]
+    assert list(df["#Metric"]) == [
+        "observed_features",
+        "shannon",
+        "simpson",
+        "inv_simpson",
+        "pielou_e",
+        "dominance",
+        "goods_coverage",
+        "chao1",
+    ]
+    assert df.loc[df["#Metric"] == "observed_features", ["alpha", "beta"]].to_dict(
+        "records"
+    ) == [{"alpha": 2.0, "beta": 2.0}]
+    assert output_plot.exists()
+    assert output_plot.stat().st_size > 0
 
 
 @pytest.mark.parametrize("suffix", [".html", ".png", ".pdf", ".svg"])
