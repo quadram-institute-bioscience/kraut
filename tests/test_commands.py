@@ -1,4 +1,5 @@
 import gzip
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -22,6 +23,11 @@ from kraut.commands import (
 from kraut.commands.cli import app
 
 runner = CliRunner()
+ANSI_ESCAPE_RE = re.compile(r"\x1b\[[0-?]*[ -/]*[@-~]")
+
+
+def strip_ansi(text: str) -> str:
+    return ANSI_ESCAPE_RE.sub("", text)
 
 
 def write_report(
@@ -71,16 +77,17 @@ def run_list_reads(
 
 def test_cli_help_groups_commands_by_category():
     result = runner.invoke(app, ["--help"])
+    output = strip_ansi(result.output)
 
     assert result.exit_code == 0
-    assert "--version" in result.output
+    assert "--version" in output
     for panel_name in [
         "Report Processing",
         "Diversity Analysis",
         "Visualization",
         "Export and Reads",
     ]:
-        assert panel_name in result.output
+        assert panel_name in output
 
 
 def test_cli_version_option_prints_package_version():
