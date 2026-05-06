@@ -1,19 +1,27 @@
+import gzip
 from pathlib import Path
 
 import pandas as pd
 import pytest
 import typer
+from typer.testing import CliRunner
 
+from kraut import __version__
 import kraut.alpha_diversity as alpha_diversity
 from kraut.commands import (
     alpha_cmd,
     beta as beta_cmd,
+    dendrogram as dendrogram_cmd,
+    list_reads,
     make_table_cmd,
     plot_multi,
     plot_single,
     ranks_cmd,
     split_table_cmd,
 )
+from kraut.commands.cli import app
+
+runner = CliRunner()
 
 
 def write_report(
@@ -29,6 +37,167 @@ def write_report(
         f" 70.00\t{species_clade_count}\t{species_taxon_count}"
         "\tS\t562\t      Escherichia coli\n"
     )
+
+
+def write_raw_output(path: Path) -> None:
+    path.write_text(
+        "C\tread_parent\t561\t100\t561:100\n"
+        "C\tread_child_one\t562\t100\t562:100\n"
+        "C\tread_child_two\t61645\t100\t61645:100\n"
+        "C\tread_domain\t2\t100\t2:100\n"
+        "U\tread_unclassified\t0\t100\t0:100\n"
+    )
+
+
+def run_list_reads(
+    raw_output: Path,
+    taxon: list[int] | None = None,
+    report_file: Path | None = None,
+    children: bool = False,
+    unclassified: bool = False,
+    invert: bool = False,
+    output_file: Path | None = None,
+) -> None:
+    list_reads.run(
+        raw_output=raw_output,
+        taxon=taxon,
+        report_file=report_file,
+        children=children,
+        unclassified=unclassified,
+        invert=invert,
+        output_file=output_file,
+    )
+
+
+def test_cli_help_groups_commands_by_category():
+    result = runner.invoke(app, ["--help"])
+
+    assert result.exit_code == 0
+    assert "--version" in result.output
+    for panel_name in [
+        "Report Processing",
+        "Diversity Analysis",
+        "Visualization",
+        "Export and Reads",
+    ]:
+        assert panel_name in result.output
+
+
+def test_cli_version_option_prints_package_version():
+    result = runner.invoke(app, ["--version"])
+
+    assert result.exit_code == 0
+    assert result.output.strip() == f"kraut {__version__}"
+
+
+def test_list_reads_writes_exact_taxon_matches(tmp_path):
+    raw_output = tmp_path / "kraken.out"
+    output = tmp_path / "reads.txt"
+    write_raw_output(raw_output)
+
+    run_list_reads(raw_output, taxon=[562], output_file=output)
+
+    assert output.read_text().splitlines() == ["read_child_one"]
+
+
+def test_list_reads_accepts_gzipped_raw_output(tmp_path):
+    raw_output = tmp_path / "kraken.out.gz"
+    output = tmp_path / "reads.txt"
+    with gzip.open(raw_output, "wt") as handle:
+        handle.write("C\tread_child_one\t562\t100\t562:100\n")
+
+    run_list_reads(raw_output, taxon=[562], output_file=output)
+
+    assert output.read_text().splitlines() == ["read_child_one"]
+
+
+def test_list_reads_can_list_only_unclassified_reads(tmp_path, capsys):
+    raw_output = tmp_path / "kraken.out"
+    write_raw_output(raw_output)
+
+    run_list_reads(raw_output, unclassified=True)
+
+    assert capsys.readouterr().out.splitlines() == ["read_unclassified"]
+
+
+def test_list_reads_children_include_parent_and_descendants(
+    tmp_path,
+    synthetic_report_path,
+):
+    raw_output = tmp_path / "kraken.out"
+    output = tmp_path / "reads.txt"
+    write_raw_output(raw_output)
+
+    run_list_reads(
+        raw_output,
+        taxon=[561],
+        report_file=synthetic_report_path,
+        children=True,
+        output_file=output,
+    )
+
+    assert output.read_text().splitlines() == [
+        "read_parent",
+        "read_child_one",
+        "read_child_two",
+    ]
+
+
+def test_list_reads_invert_applies_after_combined_match_set(tmp_path):
+    raw_output = tmp_path / "kraken.out"
+    output = tmp_path / "reads.txt"
+    write_raw_output(raw_output)
+
+    run_list_reads(
+        raw_output,
+        taxon=[562],
+        unclassified=True,
+        invert=True,
+        output_file=output,
+    )
+
+    assert output.read_text().splitlines() == [
+        "read_parent",
+        "read_child_two",
+        "read_domain",
+    ]
+
+
+def test_list_reads_requires_a_taxon_or_unclassified(tmp_path):
+    raw_output = tmp_path / "kraken.out"
+    write_raw_output(raw_output)
+
+    with pytest.raises(typer.Exit) as excinfo:
+        run_list_reads(raw_output)
+
+    assert excinfo.value.exit_code == 1
+
+
+def test_make_table_defaults_cover_simple_merged_report_output(tmp_path):
+    alpha = tmp_path / "alpha.krep.tsv"
+    beta = tmp_path / "beta.tsv"
+    output = tmp_path / "merged.tsv"
+    write_report(alpha, species_clade_count=70, species_taxon_count=30)
+    write_report(beta, species_clade_count=8, species_taxon_count=5)
+
+    make_table_cmd.run(
+        input_files=[alpha, beta],
+        output_file=output,
+        metric="TOT",
+        level="S",
+        rank_prefix=False,
+        use_taxid=False,
+        no_unclassified=False,
+        min_perc=0.0,
+    )
+
+    df = pd.read_csv(output, sep="\t")
+
+    assert list(df.columns) == ["#Taxon", "alpha", "beta"]
+    assert df.to_dict("records") == [
+        {"#Taxon": "unclassified", "alpha": 10, "beta": 10},
+        {"#Taxon": "Escherichia coli", "alpha": 70, "beta": 8},
+    ]
 
 
 def test_make_table_command_writes_named_samples_from_input_stems(tmp_path):
@@ -150,8 +319,7 @@ def write_bracken_report(path: Path, species_counts: dict) -> None:
     ]
     for idx, (name, count) in enumerate(species_counts.items(), start=1000):
         lines.append(
-            f"{count / total * 100:6.2f}\t{count}\t{count}\tS"
-            f"\t{idx}\t    {name}\n"
+            f"{count / total * 100:6.2f}\t{count}\t{count}\tS" f"\t{idx}\t    {name}\n"
         )
     path.write_text("".join(lines))
 
@@ -314,6 +482,44 @@ def test_beta_command_rejects_unsupported_plot_suffix(tmp_path):
     assert exc.value.exit_code == 1
     assert not output.exists()
     assert not plot.exists()
+
+
+def test_dendrogram_command_writes_plot_with_metadata(tmp_path):
+    kraken = tmp_path / "alpha.krep.tsv"
+    bracken = tmp_path / "beta.brep"
+    output_plot = tmp_path / "dendrogram.svg"
+    metadata = tmp_path / "metadata.tsv"
+    write_plot_report(
+        kraken,
+        unclassified_count=10,
+        species_counts={
+            "Escherichia coli": 70,
+            "Salmonella enterica": 20,
+        },
+    )
+    write_bracken_report(
+        bracken,
+        species_counts={
+            "Escherichia coli": 15,
+            "Salmonella enterica": 35,
+        },
+    )
+    metadata.write_text("sample\tgroup\nalpha\tA\nbeta\tB\n")
+
+    dendrogram_cmd.run(
+        input_files=[kraken, bracken],
+        output_file=output_plot,
+        distance="braycurtis",
+        clustering="average",
+        metadata_file=metadata,
+        color_by="group",
+        width=4.0,
+        height=3.0,
+        dpi=72,
+    )
+
+    assert output_plot.exists()
+    assert output_plot.stat().st_size > 0
 
 
 def test_ranks_command_writes_percentages_that_sum_to_100(tmp_path):

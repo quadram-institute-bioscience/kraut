@@ -33,8 +33,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo "[2/4] Testing merge-reports..."
-kraut merge-reports "$INPUT_DIR/shredded-mixes-filtered"/*.tsv -o "$TEST_OUT_DIR/merged.tsv"
+echo "[2/4] Testing make-table default output..."
+kraut make-table "$INPUT_DIR/shredded-mixes-filtered"/*.tsv -o "$TEST_OUT_DIR/merged.tsv"
 if [ -s "$TEST_OUT_DIR/merged.tsv" ]; then
     echo "  PASS: Output created"
 else
@@ -42,7 +42,7 @@ else
     exit 1
 fi
 
-echo "[3/4] Testing make-table..."
+echo "[3/4] Testing make-table options..."
 kraut make-table "$INPUT_DIR/shredded-mixes-filtered"/*.tsv -o "$TEST_OUT_DIR/table_tot.tsv" --metric TOT --rank S --rank-prefix
 if [ -s "$TEST_OUT_DIR/table_tot.tsv" ]; then
     echo "  PASS: Output created"
