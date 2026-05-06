@@ -37,11 +37,11 @@ pytest
 `kraut` parses, filters, merges, tabulates, splits, and plots Kraken2 reports.
 
 - `single-report`: filter or reformat one Kraken report.
-- `merge-reports`: merge reports into a simple comparison table.
 - `make-table`: build a configurable multi-sample abundance table.
 - `ma-export`: export reports for MicrobiomeAnalyst as counts, taxonomy, metadata, and tree files.
 - `alpha`: calculate alpha diversity from Kraken or Bracken reports.
 - `beta`: calculate beta diversity distance matrices and heatmap/PCA plots.
+- `dendrogram`: plot hierarchical clustering dendrograms from beta distances.
 - `split-combine-table`: split a KrakenTools combined table into ALL/LVL tables.
 - `plot-single`: plot one sample as an HTML or static composition chart.
 - `plot-multi`: plot multiple samples as an HTML or static stacked/bubble chart.
@@ -49,6 +49,7 @@ pytest
 ```bash
 kraut alpha reports/*.tsv -o alpha.tsv -p alpha.html --metrics core --add-metrics chao1,ace
 kraut beta reports/*.tsv -o beta.tsv --plot beta.html --pca beta_pca.html
+kraut dendrogram reports/*.tsv -o dendrogram.html --distance braycurtis --clustering ward
 kraut ma-export reports/*.tsv -o microbiomeanalyst --metadata metadata.tsv --metadata-sample-col Sample
 ```
 

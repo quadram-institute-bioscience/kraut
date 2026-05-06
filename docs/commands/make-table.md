@@ -33,6 +33,8 @@ kraut make-table [OPTIONS] INPUT_FILES...
 kraut make-table data/*.krep -o species_table.tsv
 ```
 
+This is the standard command for merging multiple Kraken reports into one comparison table.
+
 ### Creating a genus table with rank prefixes and percentages
 ```bash
 kraut make-table data/*.krep -r G -p -m PERCENTAGE -o genus_table.tsv
