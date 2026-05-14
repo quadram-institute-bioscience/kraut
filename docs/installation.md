@@ -2,11 +2,23 @@
 
 [Overview](index.md) | [Installation](installation.md) | [Commands](commands.md)
 
-Kraut is available on PyPI as `krautils`. You can install it using `pip` or from the source repository.
+
+## From Bioconda
+
+[![Conda Version](https://img.shields.io/conda/vn/bioconda/kraut)](https://bioconda.github.io/recipes/kraut/README.html)
+[![Conda Downloads](https://img.shields.io/conda/d/bioconda/kraut)](https://bioconda.github.io/recipes/kraut/README.html)
+
+```bash
+mamba install -c bioconda kraut
+```
 
 ## From PyPI
 
-To install the latest stable version:
+[![PyPI - Version](https://img.shields.io/pypi/v/krautils)](https://pypi.org/project/krautils/)
+
+:warning: Kraut is available on PyPI as `krautils`. 
+
+You can install it using `pip`:
 
 ```bash
 pip install krautils

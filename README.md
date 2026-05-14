@@ -3,6 +3,7 @@
 [![Run Pytest](https://github.com/quadram-institute-bioscience/kraut/actions/workflows/pytest.yml/badge.svg)](https://github.com/quadram-institute-bioscience/kraut/actions/workflows/pytest.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/quadram-institute-bioscience/kraut)](https://github.com/quadram-institute-bioscience/kraut/releases)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/krautils)](https://pypi.org/project/krautils/)
+[![Conda Downloads](https://img.shields.io/conda/dn/bioconda/kraut)](https://bioconda.github.io/recipes/kraut/README.html)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/quadram-institute-bioscience/kraut)](https://pypi.org/project/krautils/)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
