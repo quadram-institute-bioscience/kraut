@@ -13,6 +13,7 @@ from . import plot_single
 from . import ranks_cmd
 from . import single_report
 from . import split_table_cmd
+from . import table_summary_cmd
 
 HELP_CONTEXT = {"help_option_names": ["-h", "--help"]}
 
@@ -64,6 +65,11 @@ app.command(
     context_settings=HELP_CONTEXT,
     rich_help_panel=REPORTS_PANEL,
 )(split_table_cmd.run)
+app.command(
+    name="table-summary",
+    context_settings=HELP_CONTEXT,
+    rich_help_panel=REPORTS_PANEL,
+)(table_summary_cmd.run)
 
 app.command(
     name="alpha",
