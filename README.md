@@ -1,9 +1,9 @@
 # kraut
 
-![GitHub Release](https://img.shields.io/github/v/release/quadram-institute-bioscience/kraut)
-![PyPI - Status](https://img.shields.io/pypi/status/krautils)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/krautils)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/quadram-institute-bioscience/kraut)
+[![Run Pytest](https://github.com/quadram-institute-bioscience/kraut/actions/workflows/pytest.yml/badge.svg)](https://github.com/quadram-institute-bioscience/kraut/actions/workflows/pytest.yml)
+[![GitHub Release](https://img.shields.io/github/v/release/quadram-institute-bioscience/kraut)](https://github.com/quadram-institute-bioscience/kraut/releases)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/krautils)](https://pypi.org/project/krautils/)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/quadram-institute-bioscience/kraut)](https://pypi.org/project/krautils/)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
@@ -38,6 +38,7 @@ pytest
 
 - `single-report`: filter or reformat one Kraken report.
 - `make-table`: build a configurable multi-sample abundance table.
+- `table-summary`: summarize a table produced by `make-table`.
 - `ma-export`: export reports for MicrobiomeAnalyst as counts, taxonomy, metadata, and tree files.
 - `alpha`: calculate alpha diversity from Kraken or Bracken reports.
 - `beta`: calculate beta diversity distance matrices and heatmap/PCA plots.
