@@ -19,6 +19,7 @@ from kraut.commands import (
     plot_single,
     ranks_cmd,
     split_table_cmd,
+    table_summary_cmd,
 )
 from kraut.commands.cli import app
 
@@ -193,6 +194,7 @@ def test_make_table_defaults_cover_simple_merged_report_output(tmp_path):
         metric="TOT",
         level="S",
         rank_prefix=False,
+        add_lineage=False,
         use_taxid=False,
         no_unclassified=False,
         min_perc=0.0,
@@ -220,6 +222,7 @@ def test_make_table_command_writes_named_samples_from_input_stems(tmp_path):
         metric="LVL",
         level="S",
         rank_prefix=True,
+        add_lineage=False,
         use_taxid=False,
         no_unclassified=True,
         min_perc=0.0,
@@ -231,6 +234,71 @@ def test_make_table_command_writes_named_samples_from_input_stems(tmp_path):
     assert df.to_dict("records") == [
         {"#Taxon": "s__Escherichia coli", "alpha": 30, "beta": 5}
     ]
+
+
+def test_make_table_command_can_write_lineage_labels(tmp_path):
+    alpha = tmp_path / "alpha.tsv"
+    output = tmp_path / "lineage.tsv"
+    write_report(alpha, species_clade_count=70, species_taxon_count=30)
+
+    make_table_cmd.run(
+        input_files=[alpha],
+        output_file=output,
+        metric="TOT",
+        level="G",
+        rank_prefix=False,
+        add_lineage=True,
+        use_taxid=False,
+        no_unclassified=True,
+        min_perc=0.0,
+    )
+
+    df = pd.read_csv(output, sep="\t")
+
+    assert df.to_dict("records") == [
+        {"#Taxon": "k__Bacteria,g__Escherichia", "alpha": 70}
+    ]
+
+
+def test_table_summary_reports_size_counts_and_normalised_top_taxa(tmp_path):
+    table = tmp_path / "table.tsv"
+    output = tmp_path / "summary.txt"
+    table.write_text(
+        "#Taxon\talpha\tbeta\n"
+        "Taxon A\t90\t100\n"
+        "Taxon B\t10\t0\n"
+        "Taxon C\t0\t900\n"
+    )
+
+    table_summary_cmd.run(input_file=table, top_taxa=2, output_file=output)
+
+    report = output.read_text()
+
+    assert "Table size: 2 samples x 3 taxa" in report
+    assert "Abundance type: counts" in report
+    assert "Total counts per sample:" in report
+    assert "alpha: 100" in report
+    assert "beta: 1000" in report
+    assert "Top 2 taxa across the table (mean normalised abundance):" in report
+    assert "1. Taxon A: 50.00%" in report
+    assert "2. Taxon C: 45.00%" in report
+
+
+def test_table_summary_skips_count_totals_for_relative_tables(tmp_path, capsys):
+    table = tmp_path / "relative.tsv"
+    table.write_text(
+        "#Taxon\talpha\tbeta\n"
+        "Taxon A\t90.0\t70.0\n"
+        "Taxon B\t10.0\t30.0\n"
+    )
+
+    table_summary_cmd.run(input_file=table, top_taxa=1)
+    captured = capsys.readouterr()
+
+    assert "Table size: 2 samples x 2 taxa" in captured.out
+    assert "Abundance type: relative" in captured.out
+    assert "Total counts per sample" not in captured.out
+    assert "1. Taxon A: 80.00%" in captured.out
 
 
 def write_combined_krakentools_table(path: Path) -> None:
