@@ -10,11 +10,15 @@ class KrakenNode:
         tax_id: int,
         name: str,
         depth: int = 0,
-        parent: Optional['KrakenNode'] = None
+        parent: Optional['KrakenNode'] = None,
+        minimizer_count: Optional[int] = None,
+        distinct_minimizer_count: Optional[int] = None,
     ):
         self.percent = percent
         self.clade_counts = clade_counts
         self.taxon_counts = taxon_counts
+        self.minimizer_count = minimizer_count
+        self.distinct_minimizer_count = distinct_minimizer_count
         self.rank_code = rank_code
         self.tax_id = tax_id
         self.name = name
@@ -34,7 +38,9 @@ class KrakenNode:
         Returns the string representation of this node line, 
         attempting to reproduce Kraken2 output format.
         """
-        # Format: percent (6.2f), clade_counts, taxon_counts, rank_code, tax_id, indented_name
+        # Format: percent (6.2f), clade_counts, taxon_counts, rank_code,
+        # tax_id, indented_name. With --report-minimizer-data Kraken2 inserts
+        # two count columns before rank_code.
         # Kraken uses strict tabulation.
         # Example:
         # 100.00	3	0	R	1	root
@@ -42,8 +48,23 @@ class KrakenNode:
         
         # Name indentation is 2 spaces per depth
         indent = "  " * self.depth
-        line = f"{self.percent:6.2f}\t{self.clade_counts}\t{self.taxon_counts}\t{self.rank_code}\t{self.tax_id}\t{indent}{self.name}"
-        return line
+        columns = [
+            f"{self.percent:6.2f}",
+            str(self.clade_counts),
+            str(self.taxon_counts),
+        ]
+        if (
+            self.minimizer_count is not None
+            and self.distinct_minimizer_count is not None
+        ):
+            columns.extend(
+                [
+                    str(self.minimizer_count),
+                    str(self.distinct_minimizer_count),
+                ]
+            )
+        columns.extend([self.rank_code, str(self.tax_id), f"{indent}{self.name}"])
+        return "\t".join(columns)
 
 
 class KrakenReport:
@@ -76,15 +97,24 @@ class KrakenReport:
                     continue
                     
                 parts = line.split('\t')
-                if len(parts) != 6:
+                if len(parts) not in {6, 8}:
                     continue # Should probably error or warn
                 
                 percent = float(parts[0].strip())
                 clade_counts = int(parts[1])
                 taxon_counts = int(parts[2])
-                rank_code = parts[3]
-                tax_id = int(parts[4])
-                raw_name = parts[5]
+                if len(parts) == 8:
+                    minimizer_count = int(parts[3])
+                    distinct_minimizer_count = int(parts[4])
+                    rank_code = parts[5]
+                    tax_id = int(parts[6])
+                    raw_name = parts[7]
+                else:
+                    minimizer_count = None
+                    distinct_minimizer_count = None
+                    rank_code = parts[3]
+                    tax_id = int(parts[4])
+                    raw_name = parts[5]
                 
                 # Determine depth from leading spaces of name
                 # Kraken uses 2 spaces per level of indentation
@@ -99,7 +129,9 @@ class KrakenReport:
                     rank_code=rank_code,
                     tax_id=tax_id,
                     name=stripped_name,
-                    depth=depth
+                    depth=depth,
+                    minimizer_count=minimizer_count,
+                    distinct_minimizer_count=distinct_minimizer_count,
                 )
                 
                 report.nodes[tax_id] = node
