@@ -7,3 +7,4 @@ __pycache__
 build/
 ferm/
 .DS_Store
+uv.lock

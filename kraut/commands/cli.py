@@ -27,7 +27,7 @@ app = typer.Typer(
     help="A tool for parsing and manipulating Kraken2 reports",
     add_completion=False,
     context_settings=HELP_CONTEXT,
-    no_args_is_help=True,
+    invoke_without_command=True,
 )
 
 
@@ -39,6 +39,7 @@ def version_callback(value: bool) -> None:
 
 @app.callback()
 def main(
+    ctx: typer.Context,
     version: bool = typer.Option(
         False,
         "--version",
@@ -47,7 +48,9 @@ def main(
         help="Show the version and exit.",
     ),
 ) -> None:
-    pass
+    if ctx.invoked_subcommand is None:
+        typer.echo(ctx.get_help())
+        raise typer.Exit()
 
 
 app.command(

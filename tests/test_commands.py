@@ -91,6 +91,16 @@ def test_cli_help_groups_commands_by_category():
         assert panel_name in output
 
 
+def test_cli_without_command_shows_help_successfully():
+    result = runner.invoke(app, [])
+    output = strip_ansi(result.output)
+
+    assert result.exit_code == 0
+    assert "Usage: kraut [OPTIONS] COMMAND [ARGS]..." in output
+    assert "single-report" in output
+    assert "Error" not in output
+
+
 def test_cli_version_option_prints_package_version():
     result = runner.invoke(app, ["--version"])
 
