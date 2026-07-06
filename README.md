@@ -39,6 +39,7 @@ pytest
 
 - `single-report`: filter or reformat one Kraken report.
 - `make-table`: build a configurable multi-sample abundance table.
+- `make-mpa-table`: merge MetaPhlAn profiles into a multi-sample abundance table.
 - `table-summary`: summarize a table produced by `make-table`.
 - `ma-export`: export reports for MicrobiomeAnalyst as counts, taxonomy, metadata, and tree files.
 - `alpha`: calculate alpha diversity from Kraken or Bracken reports.
@@ -53,6 +54,7 @@ kraut alpha reports/*.tsv -o alpha.tsv -p alpha.html --metrics core --add-metric
 kraut beta reports/*.tsv -o beta.tsv --plot beta.html --pca beta_pca.html
 kraut dendrogram reports/*.tsv -o dendrogram.html --distance braycurtis --clustering ward
 kraut ma-export reports/*.tsv -o microbiomeanalyst --metadata metadata.tsv --metadata-sample-col Sample
+kraut make-mpa-table profiles/*_profile.tsv -o metaphlan_species.tsv --keep-taxid --drop-unclassified --normalise
 ```
 
 `ma-export` writes `counts.csv`, `taxonomy.csv`, `metadata.csv`, and `tree.nwk`.

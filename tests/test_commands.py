@@ -14,6 +14,7 @@ from kraut.commands import (
     beta as beta_cmd,
     dendrogram as dendrogram_cmd,
     list_reads,
+    make_mpa_table_cmd,
     make_table_cmd,
     plot_multi,
     plot_single,
@@ -86,9 +87,10 @@ def test_cli_help_groups_commands_by_category():
         "Report Processing",
         "Diversity Analysis",
         "Visualization",
-        "Export and Reads",
+        "Extras",
     ]:
         assert panel_name in output
+    assert "make-mpa-table" in output
 
 
 def test_cli_without_command_shows_help_successfully():
@@ -267,6 +269,177 @@ def test_make_table_command_can_write_lineage_labels(tmp_path):
 
     assert df.to_dict("records") == [
         {"#Taxon": "k__Bacteria,g__Escherichia", "alpha": 70}
+    ]
+
+
+def write_metaphlan_profile(
+    path: Path,
+    rows: list[tuple[str, str, float]],
+) -> None:
+    lines = [
+        "#mpa_vJun23_CHOCOPhlAnSGB_202307\n",
+        "#clade_name\tNCBI_tax_id\trelative_abundance\n",
+    ]
+    lines.extend(
+        f"{clade}\t{taxid}\t{abundance}\n" for clade, taxid, abundance in rows
+    )
+    path.write_text("".join(lines))
+
+
+def test_make_mpa_table_merges_species_profiles(tmp_path):
+    alpha = tmp_path / "alpha_profile.tsv"
+    beta = tmp_path / "beta_profile.tsv"
+    output = tmp_path / "mpa_table.tsv"
+    ecoli = (
+        "k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|"
+        "o__Enterobacterales|f__Enterobacteriaceae|g__Escherichia|"
+        "s__Escherichia_coli"
+    )
+    salmonella = (
+        "k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|"
+        "o__Enterobacterales|f__Enterobacteriaceae|g__Salmonella|"
+        "s__Salmonella_enterica"
+    )
+    lactobacillus = (
+        "k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|"
+        "f__Lactobacillaceae|g__Lactobacillus|s__Lactobacillus_crispatus"
+    )
+    write_metaphlan_profile(
+        alpha,
+        [
+            ("UNCLASSIFIED", "-1", 5.0),
+            (ecoli, "562", 70.0),
+            (salmonella, "28901", 20.0),
+        ],
+    )
+    write_metaphlan_profile(
+        beta,
+        [
+            ("UNCLASSIFIED", "-1", 0.0),
+            (ecoli, "562", 10.0),
+            (lactobacillus, "47770", 30.0),
+        ],
+    )
+
+    make_mpa_table_cmd.run(
+        input_files=[alpha, beta],
+        output_file=output,
+        level="species",
+        keep_taxid=True,
+        short_names=True,
+        drop_unclassified=True,
+        normalise=False,
+    )
+
+    df = pd.read_csv(output, sep="\t")
+
+    assert list(df.columns) == [
+        "clade_name",
+        "NCBI_tax_id",
+        "alpha_profile",
+        "beta_profile",
+    ]
+    assert df.to_dict("records") == [
+        {
+            "clade_name": "g__Escherichia|s__Escherichia_coli",
+            "NCBI_tax_id": 562,
+            "alpha_profile": 70.0,
+            "beta_profile": 10.0,
+        },
+        {
+            "clade_name": "g__Lactobacillus|s__Lactobacillus_crispatus",
+            "NCBI_tax_id": 47770,
+            "alpha_profile": 0.0,
+            "beta_profile": 30.0,
+        },
+        {
+            "clade_name": "g__Salmonella|s__Salmonella_enterica",
+            "NCBI_tax_id": 28901,
+            "alpha_profile": 20.0,
+            "beta_profile": 0.0,
+        },
+    ]
+
+
+def test_make_mpa_table_merges_metaphlan_fixture_files(tmp_path):
+    input_dir = Path(__file__).parent / "input" / "mpa"
+    input_files = [
+        input_dir / "ERR2231567.txt",
+        input_dir / "ERR2231568.txt",
+        input_dir / "ERR2231569.txt",
+    ]
+    output = tmp_path / "mpa_phylum_table.tsv"
+
+    make_mpa_table_cmd.run(
+        input_files=input_files,
+        output_file=output,
+        level="phylum",
+        keep_taxid=True,
+        short_names=True,
+        drop_unclassified=True,
+        normalise=False,
+    )
+
+    assert output.read_text().splitlines() == [
+        "clade_name\tNCBI_tax_id\tERR2231567\tERR2231568\tERR2231569",
+        "p__Proteobacteria\t2|1224\t32.3114\t43.9914\t19.6571",
+        "p__Firmicutes\t2|1239\t23.2446\t15.1589\t38.2335",
+        "p__Ascomycota\t2759|4890\t2.05287\t2.92084\t1.64723",
+        "p__Actinobacteria\t2|201174\t1.56417\t2.36155\t0.803088",
+        "p__Bacteroidota\t2|976\t0.121922\t0.148161\t0.0742926",
+    ]
+
+
+def test_make_mpa_table_can_normalise_retained_rows(tmp_path):
+    alpha = tmp_path / "alpha.tsv"
+    beta = tmp_path / "beta.tsv"
+    output = tmp_path / "normalised.tsv"
+    ecoli = (
+        "k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|"
+        "o__Enterobacterales|f__Enterobacteriaceae|g__Escherichia|"
+        "s__Escherichia_coli"
+    )
+    salmonella = (
+        "k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|"
+        "o__Enterobacterales|f__Enterobacteriaceae|g__Salmonella|"
+        "s__Salmonella_enterica"
+    )
+    lactobacillus = (
+        "k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|"
+        "f__Lactobacillaceae|g__Lactobacillus|s__Lactobacillus_crispatus"
+    )
+    write_metaphlan_profile(
+        alpha,
+        [
+            ("UNCLASSIFIED", "-1", 10.0),
+            (ecoli, "562", 70.0),
+            (salmonella, "28901", 20.0),
+        ],
+    )
+    write_metaphlan_profile(
+        beta,
+        [
+            ("UNCLASSIFIED", "-1", 60.0),
+            (ecoli, "562", 10.0),
+            (lactobacillus, "47770", 30.0),
+        ],
+    )
+
+    make_mpa_table_cmd.run(
+        input_files=[alpha, beta],
+        output_file=output,
+        level="species",
+        keep_taxid=False,
+        short_names=True,
+        drop_unclassified=True,
+        normalise=True,
+    )
+
+    assert output.read_text().splitlines() == [
+        "clade_name\talpha\tbeta",
+        "g__Escherichia|s__Escherichia_coli\t77.7778\t25",
+        "g__Lactobacillus|s__Lactobacillus_crispatus\t0\t75",
+        "g__Salmonella|s__Salmonella_enterica\t22.2222\t0",
     ]
 
 

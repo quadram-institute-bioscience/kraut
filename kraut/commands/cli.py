@@ -7,6 +7,7 @@ from . import beta
 from . import dendrogram
 from . import list_reads
 from . import ma_export
+from . import make_mpa_table_cmd
 from . import make_table_cmd
 from . import plot_multi
 from . import plot_single
@@ -20,7 +21,7 @@ HELP_CONTEXT = {"help_option_names": ["-h", "--help"]}
 REPORTS_PANEL = "Report Processing"
 DIVERSITY_PANEL = "Diversity Analysis"
 VISUALIZATION_PANEL = "Visualization"
-EXPORT_PANEL = "Export and Reads"
+EXTRAS_PANEL = "Extras"
 
 app = typer.Typer(
     name="kraut",
@@ -109,13 +110,18 @@ app.command(
 app.command(
     name="ma-export",
     context_settings=HELP_CONTEXT,
-    rich_help_panel=EXPORT_PANEL,
+    rich_help_panel=EXTRAS_PANEL,
 )(ma_export.run)
 app.command(
     name="list-reads",
     context_settings=HELP_CONTEXT,
-    rich_help_panel=EXPORT_PANEL,
+    rich_help_panel=EXTRAS_PANEL,
 )(list_reads.run)
+app.command(
+    name="make-mpa-table",
+    context_settings=HELP_CONTEXT,
+    rich_help_panel=EXTRAS_PANEL,
+)(make_mpa_table_cmd.run)
 
 if __name__ == "__main__":
     app()
