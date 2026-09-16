@@ -46,5 +46,16 @@ Keep only taxa that reach at least 0.5% abundance in at least one sample:
 kraut make-table data/*.krep --min-perc 0.5 -o filtered_table.tsv
 ```
 
+## Notes
+
+- If none of the input reports contain the requested `--rank`, the command
+  does not fail: it writes an empty table and prints a warning to stderr
+  listing the ranks that were actually found, e.g.
+  `Warning: No taxa found at rank 'S'. Ranks present: D, G, R, U.`
+- If two different taxa would collapse to the same label in the `#Taxon`
+  column (e.g. two same-named genera with different TaxIDs), the command
+  exits with an error explaining the conflict. Use `--taxid` (unique numeric
+  IDs) or `--add-lineage` (full comma-separated lineage) to disambiguate.
+
 ---
 [← Back to Commands](../commands.md)

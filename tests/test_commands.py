@@ -272,6 +272,61 @@ def test_make_table_command_can_write_lineage_labels(tmp_path):
     ]
 
 
+def test_make_table_warns_and_writes_empty_output_when_rank_is_absent(
+    tmp_path, capsys
+):
+    alpha = tmp_path / "alpha.tsv"
+    output = tmp_path / "empty.tsv"
+    write_report(alpha, species_clade_count=70, species_taxon_count=30)
+
+    make_table_cmd.run(
+        input_files=[alpha],
+        output_file=output,
+        metric="TOT",
+        level="P",
+        rank_prefix=False,
+        add_lineage=False,
+        use_taxid=False,
+        no_unclassified=False,
+        min_perc=0.0,
+    )
+
+    captured = capsys.readouterr()
+    assert "Warning: No taxa found at rank 'P'" in captured.err
+    assert "Ranks present: D, G, R, S, U" in captured.err
+    assert output.read_text() == ""
+
+
+def test_make_table_reports_a_clean_error_for_duplicate_taxon_labels(tmp_path):
+    alpha = tmp_path / "alpha.tsv"
+    output = tmp_path / "table.tsv"
+    alpha.write_text(
+        " 10.00\t10\t10\tU\t0\tunclassified\n"
+        " 90.00\t90\t0\tR\t1\troot\n"
+        " 90.00\t90\t0\tD\t2\t  Bacteria\n"
+        " 40.00\t40\t0\tG\t561\t    Escherichia\n"
+        " 40.00\t40\t40\tS\t562\t      Escherichia coli\n"
+        " 40.00\t40\t0\tG\t570\t    Escherichia\n"
+        " 40.00\t40\t40\tS\t571\t      other sp\n"
+    )
+
+    with pytest.raises(typer.Exit) as excinfo:
+        make_table_cmd.run(
+            input_files=[alpha],
+            output_file=output,
+            metric="TOT",
+            level="G",
+            rank_prefix=False,
+            add_lineage=False,
+            use_taxid=False,
+            no_unclassified=False,
+            min_perc=0.0,
+        )
+
+    assert excinfo.value.exit_code == 1
+    assert not output.exists()
+
+
 def write_metaphlan_profile(
     path: Path,
     rows: list[tuple[str, str, float]],

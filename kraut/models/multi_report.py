@@ -39,6 +39,10 @@ class MultiKrakenReport:
             self.data[node.tax_id]["clade_counts"][sample_idx] = node.clade_counts
             self.data[node.tax_id]["taxon_counts"][sample_idx] = node.taxon_counts
 
+    def ranks_present(self) -> set[str]:
+        """Return the set of rank codes present across all loaded reports."""
+        return {info["rank"] for info in self.data.values()}
+
     def _report_nodes(self, report: KrakenReport) -> List[KrakenNode]:
         nodes_to_visit = []
         if report.unclassified:

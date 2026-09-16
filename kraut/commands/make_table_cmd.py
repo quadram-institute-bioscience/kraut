@@ -54,27 +54,42 @@ def run(
     """
     multi_report = MultiKrakenReport()
 
-    for p in input_files:
-        if not p.exists():
-            typer.echo(f"Warning: File {p} does not exist, skipping.", err=True)
-            continue
+    try:
+        for p in input_files:
+            if not p.exists():
+                typer.echo(f"Warning: File {p} does not exist, skipping.", err=True)
+                continue
 
-        sample_name = p.stem
-        if sample_name.endswith(".krep"):
-            sample_name = Path(sample_name).stem
+            sample_name = p.stem
+            if sample_name.endswith(".krep"):
+                sample_name = Path(sample_name).stem
 
-        report = KrakenReport.from_file(str(p))
-        multi_report.add_report(report, sample_name)
+            report = KrakenReport.from_file(str(p))
+            multi_report.add_report(report, sample_name)
 
-    result = multi_report.to_tsv(
-        metric=metric,
-        level=level,
-        no_unclassified=no_unclassified,
-        use_taxid=use_taxid,
-        rank_prefix=rank_prefix,
-        add_lineage=add_lineage,
-        min_perc=min_perc,
-    )
+        if level != "ALL" and multi_report.data:
+            ranks_present = multi_report.ranks_present()
+            if level not in ranks_present:
+                available = ", ".join(sorted(ranks_present)) or "none"
+                typer.echo(
+                    f"Warning: No taxa found at rank '{level}' in the input "
+                    f"report(s). Ranks present: {available}. The output table "
+                    "will be empty.",
+                    err=True,
+                )
+
+        result = multi_report.to_tsv(
+            metric=metric,
+            level=level,
+            no_unclassified=no_unclassified,
+            use_taxid=use_taxid,
+            rank_prefix=rank_prefix,
+            add_lineage=add_lineage,
+            min_perc=min_perc,
+        )
+    except ValueError as exc:
+        typer.echo(f"Error: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
 
     if output_file:
         with open(output_file, "w") as f:
