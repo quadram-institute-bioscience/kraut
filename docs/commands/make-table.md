@@ -23,6 +23,7 @@ kraut make-table [OPTIONS] INPUT_FILES...
 | `--rank` | `-r` | TEXT | Taxonomic rank (K, P, C, O, F, G, S, ALL) (default: `S`). |
 | `--rank-prefix` | `-p` | | Add rank prefix to names (e.g., `s__Species`). |
 | `--taxid` | | | Use TaxID instead of taxon name as the identifier. |
+| `--add-lineage` | | | Use comma-separated lineage labels up to the requested rank. |
 | `--no-unclassified` | | | Exclude unclassified reads. |
 | `--min-perc` | | FLOAT | Remove rows where no sample reaches this % abundance (default: 0.0). |
 
